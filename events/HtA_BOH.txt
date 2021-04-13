@@ -1,0 +1,1323 @@
+#For events relating to Bohemia. Include events that affect Croatia, Hungary, Austria, and Ardeal (tag SIE, aka Transylvania) - Also one for Bavaria
+#Events 50403 - 50499? - Current free IDs: 50458-50493
+#Hungarian Revolution events are found in LiberalRevolutions with IDs 10225-7
+
+
+##################################################################################
+###########################Zadar Port Lease Event Chain###########################
+#########################Triggered by decision in HtA_BOH#########################
+###########################Event numbers 50406 to 50425###########################
+#############################And also 50494 to 50498##############################
+##################################################################################
+
+#Bohemia has a proposition######################################Change event number?
+country_event = {
+	id = 50406
+	title = "EVTNAME50406"
+	desc = "EVTDESC50406"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept the deal in return for greater funds - 30000."
+		BOH = {
+			country_event = {
+				id = 50407
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = {
+		name = "Money is good, but land is better."
+		BOH = {
+			country_event = {
+				id = 50408
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0
+				AUS_771 = { owned_by = CRO }
+			}
+		}
+	}
+	
+	option = {
+		name = "Refuse the offer."
+		BOH = {
+			country_event = {
+				id = 50409
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Croatia accepts monetary compensation for the lease
+country_event = {
+	id = 50407
+	title = "EVTNAME50407"			#somethingsomething lease is good for twenty years
+	desc = "EVTDESC50407"			#also, they ended up asking 30000
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = money_for_zadar }
+	
+	option = {
+		name = "Great news! We will pay it all at once!"
+		money = -30000
+		CRO = {
+			country_event = {
+				id = 50410
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { money = 30000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We'll pay in yearly installments."
+		money = -5000
+		add_country_modifier = {			#Installments are paid yearly and their events are at the end of the event chain section here
+			name = zadar_payment_1
+			duration = 365
+		}
+		set_country_flag = zadar_payment_1
+		781 = {	secede_province = BOH }
+		CRO = {
+			country_event = {
+				id = 50411
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "Forget the whole thing."
+		set_country_flag = abandoned_zadar_deal
+		CRO = {
+			country_event = {
+				id = 50413
+				days = 1
+			}
+		}
+	}
+}
+
+#Croatia wants more than just money
+country_event = {
+	id = 50408
+	title = "EVTNAME50408"			#somethingsomething lease is good for twenty years. Well, actually, it's infinite ATM
+	desc = "EVTDESC50408"			#they want their land back from austria, only turn over Zadar after being given Croatia proper
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = land_for_zadar }
+	
+	option = {
+		name = "This will be difficult, but very well."
+		set_country_flag = return_croatian_land
+		money = -20000
+		CRO = {
+			country_event = {
+				id = 50414
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Forget the whole thing."
+		set_country_flag = abandoned_zadar_deal
+		CRO = {
+			country_event = {
+				id = 50413
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				military_score = 10
+			}
+		}
+	}
+}		
+
+#Croatia refuses the offer
+country_event = {
+	id = 50409
+	title = "EVTNAME50409"
+	desc = "EVTDESC50409"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = cro_said_no_zadar }
+	
+	option = {
+		name = "Then we will have to resort to force."
+		set_country_flag = BOH_conquer_CRO
+		relation = {
+			who = CRO
+			value = -300
+		}
+		diplomatic_influence = {
+			who = CRO
+			value = -300
+		}
+		war = {
+			target = CRO
+			attacker_goal = { casus_belli = conquest }
+			call_ally = no
+		}
+		badboy = -12
+		
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Set up a government which will approve the deal."
+		set_country_flag = BOH_puppet_CRO
+		relation = {
+			who = CRO
+			value = -300
+		}
+		diplomatic_influence = {
+			who = CRO
+			value = -300
+		}
+		war = {
+			target = CRO
+			attacker_goal = { casus_belli = make_puppet }
+			call_ally = no
+		}
+		badboy = -7
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	option = {
+		name = "Then we will have to look elsewhere."
+		relation = {
+			who = CRO
+			value = -100
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Bohemia accepts and pays all at once
+country_event = {
+	id = 50410
+	title = "EVTNAME50410"
+	desc = "EVTDESC50410"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = zadar_lease_begins }
+	
+	option = {
+		name = "May it prove to be a useful deal."
+		781 = {
+			naval_base = 1
+			infrastructure = 1
+			secede_province = BOH
+			remove_core = CRO
+			add_core = BOH
+			add_province_modifier = {
+				name = leased
+				duration = -1
+			}
+		}
+		money = 30000
+		772 = { infrastructure = 1 }
+		776 = { infrastructure = 1 }
+		784 = { infrastructure = 1 }
+	}
+}
+
+#Bohemia accepts and pays in installments
+country_event = {
+	id = 50411
+	title = "EVTNAME50411"
+	desc = "EVTDESC50411"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = zadar_lease_begins }
+	
+	option = {
+		name = "May it prove to be a useful deal."
+		781 = {
+			naval_base = 1
+			infrastructure = 1
+			secede_province = BOH
+			remove_core = CRO
+			add_core = BOH
+			add_province_modifier = {
+				name = leased
+				duration = -1
+			}
+		}
+		money = 5000
+		772 = { infrastructure = 1 }
+		776 = { infrastructure = 1 }
+		784 = { infrastructure = 1 }
+	}
+}
+
+#Bohemia pays an installment
+country_event = {
+	id = 50412
+	title = "EVTNAME50412"
+	desc = "EVTDESC50412"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good!"
+		money = 5000
+	}
+}
+
+#Bohemia abandons the Zadar deal
+country_event = {
+	id = 50413
+	title = "EVTNAME50413"
+	desc = "EVTDESC50413"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well."
+	}
+}
+
+#Bohemia agrees to get our land back for us
+country_event = {
+	id = 50414
+	title = "EVTNAME50414"
+	desc = "EVTDESC50414"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent! We will be happy to turn Zadar over to them!"
+		set_country_flag = waiting_for_lands
+	}
+}
+
+#Our land returned!
+country_event = {
+	id = 50415
+	title = "EVTNAME50415"
+	desc = "EVTDESC50415"
+	picture = "croatia_issue"
+	
+	trigger = {
+		tag = CRO
+		has_country_flag = waiting_for_lands
+		AUS_771 = { owned_by = THIS }
+		781 = { owned_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = CRO
+		}
+	}
+	
+	option = {
+		name = "A great day! Time to uphold our end of the bargain."
+		money = 20000
+		clr_country_flag = waiting_for_lands
+		781 = {
+			naval_base = 1
+			infrastructure = 1
+			secede_province = BOH
+			remove_core = CRO
+			add_core = BOH
+			add_province_modifier = {
+				name = leased
+				duration = -1
+			}
+		}
+		772 = { infrastructure = 1 }
+		776 = { infrastructure = 1 }
+		784 = { infrastructure = 1 }
+	}
+}
+
+#Austria receives request from Bohemia to transfer Old Croatia to the Duchy of Croatia
+country_event = {
+	id = 50416
+	title = "EVTNAME50416"
+	desc = "EVTDESC50416"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept small compensation."
+		BOH = {
+			country_event = {
+				id = 50417
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				in_sphere = BOH
+			}
+		}
+	}
+	
+	option = {
+		name = "Accept significant compensation."
+		BOH = {
+			country_event = {
+				id = 50418
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 2
+				NOT = { in_sphere = BOH }
+				relation = {
+					who = BOH
+					value = 150
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Impossible."
+		prestige = 3	
+		BOH = {
+			country_event = {
+				id = 50419
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				in_sphere = BOH
+			}
+		}
+	}
+}
+
+#Austria asks for small compensation - 15000
+country_event = {
+	id = 50417
+	title = "EVTNAME50417"
+	desc = "EVTDESC50417"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Yes."
+		money = -15000
+		AUS = {
+			money = 15000
+			country_event = {
+				id = 50420
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "On second thought, maybe not."
+		AUS = {
+			country_event = {
+				id = 50421
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Austria asks for significant compensation - 35000
+country_event = {
+	id = 50418
+	title = "EVTNAME50418"
+	desc = "EVTDESC50418"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It is a steep price, but yes."
+		money = -35000
+		AUS = {
+			money = 35000
+			country_event = {
+				id = 50420
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "On second thought, maybe not."
+		AUS = {
+			country_event = {
+				id = 50421
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Austria refuses
+country_event = {
+	id = 50419
+	title = "EVTNAME50419"
+	desc = "EVTDESC50419"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we will have to rely on force of arms."
+		war = {
+			target = AUS
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 771
+			}
+			call_ally = no
+		}
+		badboy = -5
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "How can we close the deal with Croatia now?"
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Bohemia agrees to pay
+country_event = {
+	id = 50420
+	title = "EVTNAME50420"
+	desc = "EVTDESC50420"	#Have already received payment
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent! Turn Old Croatia over to them."
+		771 = { secede_province = BOH }
+		773 = { secede_province = BOH }
+		774 = { secede_province = BOH }
+		775 = { secede_province = BOH }
+	}
+}
+
+#Bohemia abandons the deal
+country_event = {
+	id = 50421
+	title = "EVTNAME50421"
+	desc = "EVTDESC50421"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well. This deal is closed, then."
+	}
+}
+
+
+#First of the installment payment events. Future lease renewals could use this same chain for the lease, but it feels weird...
+#Bohemia must pay installment 2
+country_event = {
+	id = 50494
+	title = "EVTNAME50494"
+	desc = "EVTDESC50494"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_1
+		NOT = { has_country_flag = zadar_payment_2 }
+		NOT = { has_country_flag = zadar_payment_3 }
+		NOT = { has_country_flag = zadar_payment_4 }
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_2
+		add_country_modifier = {
+			name = zadar_payment_2
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay the installment 3
+country_event = {
+	id = 50495
+	title = "EVTNAME50494"
+	desc = "EVTDESC50495"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_2
+		NOT = { has_country_flag = zadar_payment_3 }
+		NOT = { has_country_flag = zadar_payment_4 }
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_2 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_3
+		add_country_modifier = {
+			name = zadar_payment_3
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay the installment 4
+country_event = {
+	id = 50496
+	title = "EVTNAME50494"
+	desc = "EVTDESC50496"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_3
+		NOT = { has_country_flag = zadar_payment_4 }
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_3 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_4
+		add_country_modifier = {
+			name = zadar_payment_4
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay installment 5
+country_event = {
+	id = 50497
+	title = "EVTNAME50494"
+	desc = "EVTDESC50497"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_4
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_4 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_5
+		add_country_modifier = {
+			name = zadar_payment_5
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay the installment 6
+country_event = {
+	id = 50498
+	title = "EVTNAME50498"
+	desc = "EVTDESC50498"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_5
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_lease_1_finished
+		clr_country_flag = zadar_payment_1
+		clr_country_flag = zadar_payment_2
+		clr_country_flag = zadar_payment_3
+		clr_country_flag = zadar_payment_4
+		clr_country_flag = zadar_payment_5
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Croatia cancels the lease
+country_event = {
+	id = 50499
+	title = "EVTNAME50499"
+	desc = "EVTDESC50499"
+	picture = zadar
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Blast it all!"
+		prestige = -5
+		relation = {
+			who = FROM
+			value = -200
+		}
+		add_casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 36
+		}
+	}
+}
+
+#################################################################################################################################
+#####################################################Zadar Port Lease chain end##################################################
+#################################################################################################################################
+
+#Peasant rebellion in Syrmia (for SIE)
+country_event = {
+	id = 50426
+	title = "EVTNAME50426"
+	desc = "EVTDESC50426"
+	picture = "recruits"
+	
+	trigger = {
+		tag = SIE
+		791 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+		793 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+		779 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+		2538 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+		NOT = { has_country_flag = suppressed_syrm_rebellion }
+		NOT = { has_country_flag = ignored_syrm_rebellion }
+		NOT = { has_country_flag = syrm_vassal }
+		NOT = { has_country_flag = syrm_released }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Put them down, before this gets out of hand."
+		set_country_flag = suppressed_syrm_rebellion
+		AUS_2538 = {
+			any_pop = {
+				reduce_pop = 0.9
+				militancy = -2
+				consciousness = 4
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				militancy = 2
+				NOT = { militancy = 5 }
+			}
+		}
+	}
+	
+	option = {
+		name = "This fire will burn itself out."
+		set_country_flag = ignored_syrm_rebellion
+		AUS_2538 = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				NOT = { militancy = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant Syrm autonomy"
+		prestige = -5
+		set_country_flag = syrm_vassal
+		AUS_2538 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		release_vassal = SRM
+		relation = {
+			who = SRM
+			value = -50
+		}
+		SRM = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				average_militancy = 5
+				NOT = { average_militancy = 6 }
+			}
+		}
+	}
+	
+	option = {
+		name = "They have always been trouble, let us be rid of them!"
+		set_country_flag = syrm_released
+		prestige = -10
+		AUS_2538 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		release = SRM
+		relation = {
+			who = SRM
+			value = -150
+		}
+		SRM = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 15
+				average_militancy = 6
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_recently_lost_war = yes
+					truce_with = BOH
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "The rebels have the right of it!"
+		set_country_flag = syrm_released
+		AUS_2538 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		relation = {
+			who = SRM
+			value = -150
+		}
+		release = SRM
+		change_tag_no_core_switch = SRM
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 50427
+	title = "EVTNAME50427"
+	desc = "EVTDESC50427"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		is_our_vassal = SRM
+		NOT = { neighbour = SRM }
+		AUS_652 = {
+			owner = { NOT = { vassal_of = THIS } }
+			NOT = { owned_by = THIS }
+		}				
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Blast it all!"
+		release_vassal = SRM
+		relation = {
+			who = SRM
+			value = -100
+		}
+		SRM = { all_core = { remove_core = SIE } }
+		prestige = -5
+	}
+}
+
+country_event = {
+	id = 50428
+	title = "EVTNAME50428"
+	desc = "EVTDESC50428"
+	picture = "rhineland"
+	
+	trigger = {
+		tag = SIE
+		SRM = { exists = yes }
+		OR = {
+			has_country_flag = syrm_vassal
+			has_country_flag = syrm_released
+		}
+		NOT = { has_country_flag = banat_revolt }
+		BAN = { exists = no }
+		AUS_652 = {
+			owned_by = THIS
+			OR = {
+				average_militancy = 5
+				average_consciousness = 7
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			SRM = { is_vassal = no }
+		}
+	}
+	
+	option = {
+		name = "Take strong action."
+		set_country_flag = suppressed_banat_rebellion
+		AUS_652 = {
+			any_pop = {
+				reduce_pop = 0.9
+				militancy = -2
+				consciousness = 4
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				militancy = 2
+				NOT = { militancy = 5 }
+			}
+		}
+	}
+	
+	option = {
+		name = "This is a passing threat."
+		set_country_flag = ignored_banat_rebellion
+		AUS_652 = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				NOT = { militancy = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant the Banat autonomy"
+		set_country_flag = banat_vassal
+		prestige = -5
+		BAN = { all_core = { remove_core = SIE } }
+		AUS_652 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		relation = {
+			who = BAN
+			value = -50
+		}
+		release_vassal = BAN
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				average_militancy = 5
+				NOT = { average_militancy = 6 }
+			}
+		}
+	}
+	
+	option = {
+		name = "How tedious. Expel them from Ardeal!"
+		set_country_flag = banat_released
+		prestige = -10
+		AUS_652 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		release = BAN
+		relation = {
+			who = BAN
+			value = -150
+		}
+		BAN = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 15
+				average_militancy = 6
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_recently_lost_war = yes
+					truce_with = BOH
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "The Banat has the right of it!"
+		set_country_flag = banat_released
+		AUS_652 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		relation = {
+			who = SRM
+			value = -150
+		}
+		release = BAN
+		change_tag_no_core_switch = BAN
+		BAN = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 50429
+	title = "EVTNAME50429"
+	desc = "EVTDESC50429"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		is_our_vassal = BAN
+		NOT = { neighbour = BAN }
+		AUS_654 = {
+			owner = { NOT = { vassal_of = THIS } }
+			NOT = { owned_by = THIS }
+		}				
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Blast it all!"
+		release_vassal = BAN
+		BAN = { all_core = { remove_core = SIE } }
+		relation = {
+			who = BAN
+			value = -100
+		}
+		prestige = -5
+	}
+}
+
+country_event = {
+	id = 50430
+	title = "EVTNAME50430"
+	desc = "EVTDESC50430"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		AUS_2538 = { owned_by = THIS }
+		AUS_652 = { NOT = { owned_by = THIS } }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Alas!"
+		prestige = -2
+		release = SRM
+		SRM = { all_core = { remove_core = SIE } }
+	}
+}
+
+country_event = {
+	id = 50431
+	title = "EVTNAME50431"
+	desc = "EVTDESC50431"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		AUS_2538 = { NOT = { owned_by = THIS } }
+		AUS_652 = { owned_by = THIS }
+		AUS_654 = { NOT = { owned_by = THIS } }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Alas!"
+		prestige = -2
+		release = BAN
+		relation = {
+			who = BAN
+			value = -50
+		}
+		BAN = { all_core = { remove_core = SIE } }
+	}
+}
+
+#############################################################################
+#########	Hungarian Revolution Events	   ##################################
+#########  Starting from 50440				#################################
+#############################################################################
+
