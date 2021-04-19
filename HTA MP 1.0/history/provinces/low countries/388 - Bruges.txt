@@ -1,0 +1,10 @@
+owner = BRB
+controller = BRB
+add_core = BRB
+add_core = LEO
+trade_goods = grain
+life_rating = 35
+naval_base = 1
+
+
+

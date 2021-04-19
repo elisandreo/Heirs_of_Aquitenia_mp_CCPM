@@ -1,0 +1,35 @@
+political_decisions = {
+	form_benelux = {
+		picture = become_belgium
+		potential = {
+			tag = BRB
+			tag = WLL
+			tag = NET
+			NOT = { 
+				exists = LEO
+				
+			}
+			
+			
+		allow = {
+			war = no
+			is_vassal = no
+			all_core = { owned_by = THIS }
+			state_n_government = 1
+			}
+			
+			
+		effect = {
+			set_country_flag = form_benelux
+			all_core = {
+				remove_core = THIS
+				add_core = LEO
+			}
+			change_tag = LEO
+			}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}

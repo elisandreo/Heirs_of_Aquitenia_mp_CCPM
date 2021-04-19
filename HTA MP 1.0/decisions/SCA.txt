@@ -1,0 +1,309 @@
+political_decisions = {	
+    expand_north = {
+		picture = dreams_of_empire
+		potential = {
+			tag = SCA
+			has_country_flag = went_north
+			NOT = { has_country_flag = finnished_him }
+		}
+		allow = {
+			revolution n counterrevolution = 1
+			is_greater_power = yes
+			war = no
+			prestige = 60
+			SCA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			badboy = 10
+			set_country_flag = finnished_him
+			add_accepted_culture = ugrian
+			984 = {
+                    	       add_core = THIS 
+                	}
+			995 = {
+                    	       add_core = THIS 
+                	}
+			988 = {
+                    	       add_core = THIS 
+                	}
+			2588 = {
+                    	       add_core = THIS 
+                	}
+			993 = {
+                    	       add_core = THIS 
+                	}
+			992 = {
+                    	       add_core = THIS 
+                	}
+			1004 = {
+                    	       add_core = THIS 
+                	}
+			2580 = {
+                    	       add_core = THIS 
+                	}
+			994 = {
+                    	       add_core = THIS 
+                	}
+			1003 = {
+                    	       add_core = THIS 
+                	}
+			996 = {
+                    	       add_core = THIS 
+                	}
+			997 = {
+                    	       add_core = THIS 
+                	}
+			349 = {
+                    		add_core = THIS 
+                	}
+			350 = {
+                    		add_core = THIS 
+               		}
+			351 = {
+                    		add_core = THIS 
+               		}
+			352 = {
+                    		add_core = THIS 
+                	}
+			353 = {
+                    		add_core = THIS 
+                	}
+			354 = {
+                    		add_core = THIS 
+                	}
+			355 = {
+                    		add_core = THIS 
+                	}
+			356 = {
+                    		add_core = THIS 
+                	}
+			357 = {
+                    		add_core = THIS 
+                	}
+			358 ={
+                	    add_core = THIS 
+                	}
+			359 = {
+				add_core = THIS
+			}
+		}
+	}
+	expand_east = {
+		picture = dreams_of_empire
+		potential = {
+			tag = SCA
+			has_country_flag = went_east
+			NOT = { has_country_flag = finnished_him }
+		}
+		allow = {
+			revolution n counterrevolution = 1
+			is_greater_power = yes
+			war = no
+			prestige = 60
+			SCA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			badboy = 10
+			prestige = 5
+			add_accepted_culture = finnish
+			add_accepted_culture = sami
+			set_country_flag = finnished_him
+			984 = {
+                    	       add_core = THIS 
+                	}
+			995 = {
+                    	       add_core = THIS 
+                	}
+			988 = {
+                    	       add_core = THIS 
+                	}
+			2588 = {
+                    	       add_core = THIS 
+                	}
+			993 = {
+                    	       add_core = THIS 
+                	}
+			992 = {
+                    	       add_core = THIS 
+                	}
+			1004 = {
+                    	       add_core = THIS 
+                	}
+			2580 = {
+                    	       add_core = THIS 
+                	}
+			994 = {
+                    	       add_core = THIS 
+                	}
+			1003 = {
+                    	       add_core = THIS 
+                	}
+			996 = {
+                    	       add_core = THIS 
+                	}
+			997 = {
+                    	       add_core = THIS 
+                	}
+			320 = {
+        	            add_core = THIS 
+                	}
+			321 = {
+                	    add_core = THIS 
+                	}
+			307 = {
+                	    add_core = THIS 
+                	}
+			338 = {
+                	    add_core = THIS 
+                	}
+			982 = {
+                	    add_core = THIS 
+                	}
+			983 = {
+                	    add_core = THIS 
+                	}
+			2587 = {
+                	    add_core = THIS 
+                	}
+			336 = {
+        	            add_core = THIS 
+                	}
+			337 = {
+                	    add_core = THIS 
+                	}
+			339 = {
+                	    add_core = THIS 
+                	}
+			340 = {
+                	    add_core = THIS 
+                	}
+			341 = {
+                	    add_core = THIS 
+                	}
+			342 = {
+                	    add_core = THIS 
+                	}
+			343 = {
+                	    add_core = THIS 
+                	}
+			344 = {
+                	    add_core = THIS 
+                	}
+			345 = {
+                	    add_core = THIS 
+                	}
+			346 = {
+                	    add_core = THIS 
+                	}
+			347 = {
+                	    add_core = THIS 
+                	}
+		}
+	}
+	west_path = {
+		picture = dreams_of_empire
+		potential = {
+			tag = SCA
+			has_country_flag = went_west
+			NOT = { has_country_flag = went_wester }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes
+			war = no
+			prestige = 60
+			SCA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			badboy = 10
+			set_country_flag = went_wester
+			add_accepted_culture = vestlandic
+			241 = {
+                	    add_core = THIS 
+                	}
+			242 = {
+                	    add_core = THIS 
+                	}
+			243 = {
+                	    add_core = THIS 
+                	}
+			244 = {
+                	    add_core = THIS 
+                	}
+			245 = {
+                	    add_core = THIS 
+                	}
+			234 = {
+                	    add_core = THIS 
+                	}
+			246 = {
+                	    add_core = THIS 
+                	}
+			239 = {
+                	    add_core = THIS 
+                	}
+			240 = {
+                	    add_core = THIS 
+                	}
+			232 = {
+                	    add_core = THIS 
+                	}
+			233 = {
+                	    add_core = THIS 
+                	}
+			229 = {
+                	    add_core = THIS 
+                	}
+			230 = {
+                	    add_core = THIS 
+                	}
+			231 = {
+                	    add_core = THIS 
+                	}
+			224 = {
+                	    add_core = THIS 
+                	}
+			225 = {
+                	    add_core = THIS 
+                	}
+			235 = {
+                	    add_core = THIS 
+                	}
+			237 = {
+                	    add_core = THIS 
+                	}
+			238 = {
+                	    add_core = THIS 
+                	}
+			222 = {
+                	    add_core = THIS 
+                	}
+			219 = {
+                	    add_core = THIS 
+                	}
+			220 = {
+                	    add_core = THIS 
+                	}
+			223 = {
+                	    add_core = THIS 
+                	}
+			226 = {
+                	    add_core = THIS 
+                	}
+		}
+	}
+}

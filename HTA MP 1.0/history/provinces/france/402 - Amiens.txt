@@ -1,0 +1,7 @@
+owner = WLL
+controller = WLL
+add_core = WLL
+add_core = LEO
+trade_goods = fish
+life_rating = 35
+

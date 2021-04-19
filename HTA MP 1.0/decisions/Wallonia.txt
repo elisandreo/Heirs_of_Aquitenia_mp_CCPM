@@ -1,0 +1,46 @@
+political_decisions = {
+
+	union_brabant = {
+		potential = {
+			primary_culture = wallonian
+			NOT = { tag = BRB }
+			NOT = { has_country_flag = flanders_accepted }
+		}
+	
+		allow = {
+			war = no
+			is_vassal = no
+			owns = 387
+			owns = 388
+			owns = 389
+			owns = 390
+			owns = 391
+			ideological_thought = 1
+		}
+		
+		effect = {
+			prestige = 10
+			387 = {
+                    add_core = THIS 
+                }
+			388 = {
+                    add_core = THIS 
+                }
+			389 = {
+                    add_core = THIS 
+                }
+			390 = {
+                    add_core = THIS 
+                }
+			391 = {
+                    add_core = THIS 
+                }
+			add_accepted_culture = flemish
+			set_country_flag = flanders_accepted
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

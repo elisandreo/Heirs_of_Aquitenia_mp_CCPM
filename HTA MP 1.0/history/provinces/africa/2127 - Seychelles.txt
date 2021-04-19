@@ -1,0 +1,7 @@
+owner = CAS
+controller = CAS
+trade_goods = fruit
+life_rating = 35
+terrain = small_island
+colonial = 2
+naval_base = 1

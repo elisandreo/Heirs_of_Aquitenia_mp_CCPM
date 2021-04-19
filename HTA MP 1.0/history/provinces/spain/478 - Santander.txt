@@ -1,0 +1,6 @@
+owner = CAS
+controller = CAS
+add_core = CAS
+trade_goods = fish
+life_rating = 35
+

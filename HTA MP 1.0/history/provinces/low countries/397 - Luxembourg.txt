@@ -1,0 +1,8 @@
+owner = LUX
+controller = LUX
+add_core = LUX
+add_core = LEO
+trade_goods = iron
+life_rating = 35
+
+
