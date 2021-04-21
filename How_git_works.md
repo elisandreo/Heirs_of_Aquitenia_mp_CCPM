@@ -100,7 +100,7 @@ This works because How_git_works is at the same level as my git console :
 
 Now I couldn't add the france.txt file for example : 
 
-<img src="picture_markdown/Screen_git_add4.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_add4.png" alt="Illustration" width="400"/>
 
 But if I go to the file folder it works : 
 
