@@ -164,4 +164,4 @@ git pull "the name you gave to the remote" master #the master is optional but I 
 
 Now the guide is over, I hope you understood it and that it wasn't hard !
 
-A quick link to recap some useful git console commands <a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM/useful_git_console_commands.md" target="_blank">here.</a>
+A quick link to recap some useful git console commands <a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM/blob/main/useful_git_console_commands.md" target="_blank">here.</a>
