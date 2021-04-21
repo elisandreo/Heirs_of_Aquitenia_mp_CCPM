@@ -62,7 +62,7 @@ git remote
 Here, origin is my remote, it's the git repository where I'm sending my modification and the one I'm downloading the modification from. To add me as a remote you should type this : 
 
 ```sh
-git remote add "the name you want to give" "the link of my repository + .git"
+git remote add "the name you want to give" "https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM.git"
 ```
 <img src="picture_markdown/git_commands/Screen_git_remote3.png" alt="Illustration" width="400"/> <img src="picture_markdown/git_commands/Screen_git_remote4.png" alt="Illustration" width="400"/>
 
@@ -136,7 +136,7 @@ git push "the remote you want to push your modification to"
 
 Like that : 
 
-<img src="picture_markdown/Screen_git_add8.png" alt="Illustration" width="400"/> 
+<img src="picture_markdown/git_commands/Screen_git_add8.png" alt="Illustration" width="400"/> 
 
 (The message following isn't important, it just says the files size and other stuff)
 
