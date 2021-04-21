@@ -18,4 +18,4 @@ So, now that you have created your git account and downloaded the consol, we can
 
 Once you're on Github, go to my project (<a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM" target="_blank">Heirs_of_Aquitania_CCPM</a>) and click on fork : 
 
-![](./picture_markdown/Screen_git_fork.png =100x20)
+<img src="picture_markdown/Screen_git_fork.png" alt="drawing" width="200"/>
