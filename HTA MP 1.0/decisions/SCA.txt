@@ -22,6 +22,8 @@ political_decisions = {
 			badboy = 10
 			set_country_flag = finnished_him
 			add_accepted_culture = ugrian
+			add_accepted_culture = estonian
+			add_accepted_culture = latvian
 			984 = {
                     	       add_core = THIS 
                 	}
