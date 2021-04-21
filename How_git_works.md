@@ -1,7 +1,7 @@
-## A quick introduction on git : 
+# A quick introduction on git : 
 
 
-# What you need to know and download before the turorial :
+## What you need to know and download before the turorial :
 
 Git is an online software of decentralized version management. It's often used in for IT project as it manage merging files and common project very well. It also keep the old version in case u mess with your project.
 
@@ -14,5 +14,8 @@ You will also need to install a git consol based on linux to save your work onli
 
 So, now that you have created your git account and downloaded the consol, we can begin the real tutorial.
 
-# How does it work :
+## How does it work :
 
+Once you're on Github, go to my project (<a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM" target="_blank">Heirs_of_Aquitania_CCPM</a>) and click on fork : 
+
+![](./picture_markdown/Screen_git_fork.png =100x20)
