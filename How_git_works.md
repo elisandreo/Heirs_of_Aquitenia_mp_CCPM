@@ -154,7 +154,14 @@ I will need to accept it and only then your modification will be added to the ma
 In order to download the modification made by other users, you will need to **pull** from my repository, using the remote you added (remember ?). So you just need to do that : 
 
 ```sh
-git pull "the name you gave to the remote" master
+git pull "the name you gave to the remote" master #the master is optional but I learned with it 
 ```
 
 <img src="picture_markdown/Screen_git_pull1.png" alt="Illustration" width="400"/> 
+
+
+
+
+Now the guide is over, I hope you understood it and that it wasn't hard !
+
+A quick link to recap some useful git console commands <a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM/useful_git_console_commands" target="_blank">here.</a>
