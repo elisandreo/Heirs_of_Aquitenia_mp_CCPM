@@ -51,10 +51,18 @@ Now you have all the files that are on my git repository. It should look like th
 
 First you should add my repository as a remote. But what is a remote ?
 
-Using your git console, type 
+Using your git console, type :
+
 ```sh
 git remote
 ```
 
 <img src="picture_markdown/Screen_git_remote1.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote2.png" alt="Illustration" width="400"/>
+
+Here, origin is my remote, it's the git repository where I'm sending my modification and the one I'm downloading the modification from. To add me as a remote you should type this : 
+
+```sh
+git remote add "the name you want to give" "the link you used to clone your repository"
+```
+<img src="picture_markdown/Screen_git_remote3.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote4.png" alt="Illustration" width="400"/>
 
