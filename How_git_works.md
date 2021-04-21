@@ -18,7 +18,7 @@ So, now that you have created your git account and downloaded the consol, we can
 
 Once you're on Github, go to my project (<a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM" target="_blank">Heirs_of_Aquitania_CCPM</a>) and click on fork : 
 
-![](picture_markdown/Screen_git_fork.png =100x20)
+![Fork](picture_markdown/Screen_git_fork.png =100x20)
 
 **So what does the fork do ?**
 It will create for you new git repository based on the one you just forked. It will give me acces to your reposiroty and give you the possibility later on to do merge request on my repository.
