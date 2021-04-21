@@ -62,7 +62,16 @@ git remote
 Here, origin is my remote, it's the git repository where I'm sending my modification and the one I'm downloading the modification from. To add me as a remote you should type this : 
 
 ```sh
-git remote add "the name you want to give" "the link you used to clone your repository"
+git remote add "the name you want to give" "the link of my repository + .git"
 ```
 <img src="picture_markdown/Screen_git_remote3.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote4.png" alt="Illustration" width="400"/>
 
+(Here you can notice I added mine so it's the same as my origin but for you it's different)
+
+If you want to remove a remote, just type 
+
+```sh
+git remote remove "name of the remote you want to remove"
+```
+
+<img src="picture_markdown/Screen_git_remote5.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote6.png" alt="Illustration" width="400"/>
