@@ -25,5 +25,5 @@ It will create for you new git repository based on the one you just forked. It w
 
 Now you will click on the button **Clone** and copy the HTTPS link
 
-<img src="picture_markdown/Screen_git_clone.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_clone2.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/Screen_git_clone.png" alt="Illustration" width="600"/> <img src="picture_markdown/Screen_git_clone2.png" alt="Illustration" width="400"/>
 
