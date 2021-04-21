@@ -20,14 +20,14 @@ So, now that you have created your git account and downloaded the console, we ca
 
 Once you're on Github, go to my project (<a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM" target="_blank">Heirs_of_Aquitania_CCPM</a>) and click on fork : 
 
-<img src="picture_markdown/Screen_git_fork.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_fork.png" alt="Illustration" width="400"/>
 
 **So what does the fork do ?**
 It will create for you new git repository based on the one you just forked. It will give me acces to your reposiroty and give you the possibility later on to do merge request on my repository.
 
 Now you will click on the button **Clone** and copy the HTTPS link
 
-<img src="picture_markdown/Screen_git_clone.png" alt="Illustration" width="600"/> <img src="picture_markdown/Screen_git_clone2.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_clone.png" alt="Illustration" width="600"/> <img src="picture_markdown/git_commands/Screen_git_clone2.png" alt="Illustration" width="400"/>
 
 Then you open your git console, go to the directory in which you want to work for this project and type : 
 ```sh
@@ -37,13 +37,13 @@ git clone "the link you just copied"
 
 It gives that : 
 
-<img src="picture_markdown/Screen_git_clone3.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_clone3.png" alt="Illustration" width="400"/>
 
 then press the enter key.
 
 Now you have all the files that are on my git repository. It should look like that : 
 
-<img src="picture_markdown/Screen_git_clone4.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_clone4.png" alt="Illustration" width="400"/>
 
 (obviously not in french for you)
 
@@ -57,14 +57,14 @@ Using your git console, type :
 git remote
 ```
 
-<img src="picture_markdown/Screen_git_remote1.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote2.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_remote1.png" alt="Illustration" width="400"/> <img src="picture_markdown/git_commands/Screen_git_remote2.png" alt="Illustration" width="400"/>
 
 Here, origin is my remote, it's the git repository where I'm sending my modification and the one I'm downloading the modification from. To add me as a remote you should type this : 
 
 ```sh
 git remote add "the name you want to give" "the link of my repository + .git"
 ```
-<img src="picture_markdown/Screen_git_remote3.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote4.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_remote3.png" alt="Illustration" width="400"/> <img src="picture_markdown/git_commands/Screen_git_remote4.png" alt="Illustration" width="400"/>
 
 (Here you can notice I added mine so it's the same as my origin but for you it's different)
 
@@ -74,7 +74,7 @@ If you want to remove a remote, just type
 git remote remove "name of the remote you want to remove"
 ```
 
-<img src="picture_markdown/Screen_git_remote5.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote6.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_remote5.png" alt="Illustration" width="400"/> <img src="picture_markdown/git_commands/Screen_git_remote6.png" alt="Illustration" width="400"/>
 
 
 
@@ -92,11 +92,11 @@ git add --all #add all the files you modified. Dangerous if you didn't want one 
 
 So, to be clear : 
 
-<img src="picture_markdown/Screen_git_add1.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_add1.png" alt="Illustration" width="400"/>
 
 This works because How_git_works is at the same level as my git console : 
 
-<img src="picture_markdown/Screen_git_add2.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_add3.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_add2.png" alt="Illustration" width="400"/> <img src="picture_markdown/git_commands/Screen_git_add3.png" alt="Illustration" width="400"/>
 
 Now I couldn't add the france.txt file for example : 
 
@@ -104,7 +104,7 @@ Now I couldn't add the france.txt file for example :
 
 But if I go to the file folder it works : 
 
-<img src="picture_markdown/Screen_git_add5.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_add6.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_add5.png" alt="Illustration" width="400"/> <img src="picture_markdown/git_commands/Screen_git_add6.png" alt="Illustration" width="400"/>
 
 
 
@@ -123,7 +123,7 @@ git commit -m"The commentary about what you modified"
 
 (The commentary need to be short, just say what you worked on)
 
-<img src="picture_markdown/Screen_git_add7.png" alt="Illustration" width="400"/>
+<img src="picture_markdown/git_commands/Screen_git_add7.png" alt="Illustration" width="400"/>
 
 
 
@@ -157,7 +157,7 @@ In order to download the modification made by other users, you will need to **pu
 git pull "the name you gave to the remote" master #the master is optional but I learned with it 
 ```
 
-<img src="picture_markdown/Screen_git_pull1.png" alt="Illustration" width="400"/> 
+<img src="picture_markdown/git_commands/Screen_git_pull1.png" alt="Illustration" width="400"/> 
 
 
 
