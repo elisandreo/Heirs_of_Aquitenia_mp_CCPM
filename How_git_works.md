@@ -14,7 +14,7 @@ You will also need to install a git consol based on linux to save your work onli
 
 So, now that you have created your git account and downloaded the consol, we can begin the real tutorial.
 
-## How does it work :
+## How to download my files :
 
 Once you're on Github, go to my project (<a href="https://github.com/elisandreo/Heirs_of_Aquitenia_mp_CCPM" target="_blank">Heirs_of_Aquitania_CCPM</a>) and click on fork : 
 
@@ -31,7 +31,28 @@ Then you open your git console, go to the directory in which you want to work fo
 ```sh
 git clone "the link you just copied"
 ```
+(don't write the ", and if you can't paste, just write the link somewhere you can read it from and then write it)
+
 It gives that : 
 
 <img src="picture_markdown/Screen_git_clone3.png" alt="Illustration" width="400"/>
+
+then press the enter key.
+
+Now you have all the files that are on my git repository. It should look like that : 
+
+<img src="picture_markdown/Screen_git_clone4.png" alt="Illustration" width="400"/>
+
+(obviously not in french for you)
+
+## How to upoad and download next time :
+
+First you should add my repository as a remote. But what is a remote ?
+
+Using your git console, type 
+```sh
+git remote
+```
+
+<img src="picture_markdown/Screen_git_remote1.png" alt="Illustration" width="400"/> <img src="picture_markdown/Screen_git_remote2.png" alt="Illustration" width="400"/>
 
