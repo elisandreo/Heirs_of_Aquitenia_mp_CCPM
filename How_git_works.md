@@ -27,3 +27,11 @@ Now you will click on the button **Clone** and copy the HTTPS link
 
 <img src="picture_markdown/Screen_git_clone.png" alt="Illustration" width="600"/> <img src="picture_markdown/Screen_git_clone2.png" alt="Illustration" width="400"/>
 
+Then you open your git console, go to the directory in which you want to work for this project and type : 
+```sh
+git clone "the link you just copied"
+```
+It gives that : 
+
+<img src="picture_markdown/Screen_git_clone3.png" alt="Illustration" width="400"/>
+
