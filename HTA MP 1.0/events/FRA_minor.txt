@@ -10,22 +10,22 @@ country_event = {
         name = "We bow !"
         vassal_of = FRA
         ai_chance = {
-			factor = 1
+			factor = 0.5
             modifier = {
+                factor = 0.25
                 relation = { who = FRA value = 50 }
-                factor = 1.25
             }
             modifier = {
+                factor = 0.5
                 relation = { who = FRA value = 100 }
-                factor = 1.5
             }
             modifier = {
+                factor = 0.75
                 relation = { who = FRA value = 150 }
-                factor = 1.75
             }
             modifier = {
+                factor = 1
                 relation = { who = FRA value = 200 }
-                factor = 2
             }
 		}
     }
@@ -41,22 +41,22 @@ country_event = {
 			}
 		}
         ai_chance = {
-			factor = 1
+			factor = 0.5
             modifier = {
+                factor = 0.25
                 relation = { who = FRA value = -50 }
-                factor = 1.25
             }
             modifier = {
+                factor = 0.5
                 relation = { who = FRA value = -100 }
-                factor = 1.5
             }
             modifier = {
+                factor = 0.75
                 relation = { who = FRA value = -150 }
-                factor = 1.75
             }
             modifier = {
+                factor = 1
                 relation = { who = FRA value = -200 }
-                factor = 2
             }
 		}
     }
