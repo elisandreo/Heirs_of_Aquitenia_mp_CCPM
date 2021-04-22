@@ -35,7 +35,7 @@ political_decisions = {
 			}
 			prestige = 20
 			war = no
-			owns = 428
+			owns = 408
 		}
 		effect = {
  		prestige = 10

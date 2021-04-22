@@ -12,10 +12,6 @@ country_event = {
         ai_chance = {
 			factor = 1
             modifier = {
-				war = yes
-				factor = 0.5
-			}
-            modifier = {
                 relation = { who = FRA value = 50 }
                 factor = 1.25
             }
@@ -46,10 +42,6 @@ country_event = {
 		}
         ai_chance = {
 			factor = 1
-            modifier = {
-				war = no
-				factor = 1.5
-			}
             modifier = {
                 relation = { who = FRA value = -50 }
                 factor = 1.25
