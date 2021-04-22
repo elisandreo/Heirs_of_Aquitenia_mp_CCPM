@@ -1,7 +1,7 @@
 country_event = {
 	id = 1000001
-    title = "French king crown in Reims !"
-	desc = "The king of France has been crown in Reims, giving him the right to rule over France by god ! what should we do ?"
+    title = "EVTNAME1000001"
+	desc = "EVTDESC1000001"
 	picture = "coronation_reims"
 
     is_triggered_only = yes
