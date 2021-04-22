@@ -8,7 +8,7 @@ country_event = {
 
     option = {
         name = "We bow !"
-        is_vassal = FRA
+        vassal_of = FRA
         ai_chance = {
 			factor = 1
             modifier = {
