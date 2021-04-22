@@ -756,3 +756,5 @@ EVTNAME97097;Enable Story Railroading?;;;;;;;;;;;x
 EVTDESC97097;The story in the Heirs to Aquitània mod has been crafted in such a way that some events simply must happen the way the mod's maker, Savs, intends them to. This is meant to make the sequence of events in the game more challenging (maybe), interesting, and most of all, predictable. He's included this because this mod will be the basis of his megacampaign AAR, and this is part of the story. Anyways, don't select this option if you don't want a game where the outcomes of many major events are already essentially decided.;;;;;;;;;;;;;;x
 EVTNAME97098;Staking our claim;;;;;;;;;x
 EVTDESC97098;There yet remain unclaimed areas of the interior of the Amerigan continent. Our burgeoning population is searching for new opportunities, and have begun to make their way to the uncolonised lands of their own accord, pledging to remain loyal to our government.;;;;;;;;;;;;;x
+EVTNAME1000001;The king of France has been crown in Reims !;;;;;;;;;x
+EVTDESC1000001;The king of France has been crown in Reims, giving him the right to rule over France by god ! what should we do ?;;;;;;;;;x
