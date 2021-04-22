@@ -235,7 +235,6 @@ political_decisions = {
 		potential = {
 			primary_culture = french
 			NOT = { tag = FRA }
-			NOT = { has_country_flag = france }
 		}
 		
 		allow = {

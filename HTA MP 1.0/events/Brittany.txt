@@ -1,0 +1,67 @@
+country_event = {
+	id = 1000002
+	title = "EVTNAME1000002"
+	desc = "EVTDESC1000002"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BRT
+		year = 1836
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "Embrace our France heritage !"
+		set_country_flag = accept_france_heritage
+		primary_culture = french
+		add_accepted_culture = breton
+		ai_chance = {
+			factor = 0.5
+			 modifier = {
+                factor = 0.25
+				relation{ who = FRA value = 50 }
+			 }
+			 modifier = {
+                factor = 0.5
+				relation{ who = FRA value = 100 }
+			 }
+			 modifier = {
+                factor = 0.75
+				relation{ who = FRA value = 150 }
+			 }
+			 modifier = {
+                factor = 1
+				relation{ who = FRA value = 200 }
+			 }
+		}
+	}
+	option = {
+		name = "Embrace our Gallic heritage !"
+		militancy = 1
+		consciousness = 1
+		add_accepted_culture = cornish
+		ai_chance = {
+			factor = 0.5
+			 modifier = {
+                factor = 0.25
+				relation{ who = IRE value = 50 }
+			 }
+			 modifier = {
+                factor = 0.5
+				relation{ who = IRE value = 100 }
+			 }
+			 modifier = {
+                factor = 0.75
+				relation{ who = IRE value = 150 }
+			 }
+			 modifier = {
+                factor = 1
+				relation{ who = IRE value = 200 }
+			 }
+		}
+	}
+}
