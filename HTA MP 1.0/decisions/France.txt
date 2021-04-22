@@ -22,6 +22,7 @@ political_decisions = {
 
 #Crown in Reims !
 	crown_in_reims = {
+		picture = coronation_reims
 		potential = {
 			tag = FRA
 			primary_culture = french
@@ -38,13 +39,22 @@ political_decisions = {
 			ns = 428
 		}
 		effect = {
- 			prestige = 10
-  			CMP = {country_event = 100001}
-			BRR = {country_event = 100001}
-			LOR = {country_event = 100001}
-			ORL = {country_event = 100001}
-			NRM = {country_event = 100001}
-			set_global_flag = crown_in_reims
+ 		prestige = 10
+  		any_country = {
+        	limit = {
+            	is_culture_group = french
+				NOT = { tag = THIS }
+				NOT = { has_country_flag = post_colonial_country }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				exists = yes
+    		}
+    		all_core = { add_core = FRA   }
+    		country_event = 1000001
+    	}
+		set_country_flag = crown_in_reims
 		}
 	}
 	

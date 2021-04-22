@@ -1,0 +1,27 @@
+country_event = {
+	id = 1000001
+    title = "French king crown in Reims !"
+	desc = "The king of France has been crown in Reims, giving him the right to rule over France by god ! what should we do ?"
+	picture = "coronation_reims"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We bow !"
+        is_vassal = FRA
+    }
+    option = {
+        name = "We will stand and fight !"
+        war = {
+			target = FRA
+			attacker_goal = {
+				casus_belli = humiliate
+			}
+			defender_goal = {
+				casus_belli = make_puppet
+			}
+		}
+        ai_chance = {
+			factor = 1
+		}
+    }
