@@ -9,6 +9,29 @@ country_event = {
     option = {
         name = "We bow !"
         is_vassal = FRA
+        ai_chance = {
+			factor = 1
+            modifier = {
+				war = yes
+				factor = 0.5
+			}
+            modifier = {
+                relation = { who = FRA value = 50 }
+                factor = 1.25
+            }
+            modifier = {
+                relation = { who = FRA value = 100 }
+                factor = 1.5
+            }
+            modifier = {
+                relation = { who = FRA value = 150 }
+                factor = 1.75
+            }
+            modifier = {
+                relation = { who = FRA value = 200 }
+                factor = 2
+            }
+		}
     }
     option = {
         name = "We will stand and fight !"
@@ -23,5 +46,25 @@ country_event = {
 		}
         ai_chance = {
 			factor = 1
+            modifier = {
+				war = no
+				factor = 1.5
+			}
+            modifier = {
+                relation = { who = FRA value = -50 }
+                factor = 1.25
+            }
+            modifier = {
+                relation = { who = FRA value = -100 }
+                factor = 1.5
+            }
+            modifier = {
+                relation = { who = FRA value = -150 }
+                factor = 1.75
+            }
+            modifier = {
+                relation = { who = FRA value = -200 }
+                factor = 2
+            }
 		}
     }
