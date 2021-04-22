@@ -2,7 +2,7 @@ country_event = {
 	id = 1000001
     title = "EVTNAME1000001"
 	desc = "EVTDESC1000001"
-	picture = "coronation_reims"
+	picture = "bow_king"
 
     is_triggered_only = yes
 
