@@ -8,7 +8,7 @@ country_event = {
 
     option = {
         name = "We bow !"
-        vassal_of = FRA
+        FRA = {country_event = 10000004}
         ai_chance = {
 			factor = 0.5
             modifier = {
@@ -30,16 +30,8 @@ country_event = {
 		}
     }
     option = {
-        name = "We will stand and fight !"
-        war = {
-			target = FRA
-			attacker_goal = {
-				casus_belli = humiliate
-			}
-			defender_goal = {
-				casus_belli = make_puppet
-			}
-		}
+        name = "We will stand and fight if needed !"
+        FRA = {country_event = 10000003}
         ai_chance = {
 			factor = 0.5
             modifier = {
@@ -60,3 +52,82 @@ country_event = {
             }
 		}
     }
+}
+
+country_event = {
+	id = 1000003
+    title = "EVTNAME1000003"
+	desc = "EVTDESC1000003"
+	picture = "bow_king"
+
+    allow_multiple_instances = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will meet on the Battlefield then !"
+        badboy = 2
+        prestige = 1
+        relation = {who = $FROMCOUNTRY$ value = -50}
+        war = {
+			target = $FROMCOUNTRY$
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = humiliate
+			}
+            FROM = {
+
+		    country_event = {id = 100001 days = 0}
+			
+		    }
+            ai_chance = {
+			    factor = 0.75
+                modifier = {
+                    factor = 0.5
+                    war = yes
+                }
+		    }
+        }
+    }
+    option = {
+        name="They can stay free for now..."
+        prestige = -5
+        relation = {who = $FROMCOUNTRY$ value = 50}
+        FROM = {
+
+		    country_event = {id = 100001 days = 0}
+			
+		}
+        ai_chance = {
+            factor = 0.25
+            modifier = {
+                factor = 0.5
+                war = no
+            }
+        }
+    }
+}
+
+country_event = {
+	id = 1000004
+    title = "EVTNAME1000004"
+	desc = "EVTDESC1000004"
+	picture = "bow_king"
+
+    allow_multiple_instances = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A new era for the kingdom of France !"
+        create_vassal = $FROMCOUNTRY$
+        FROM = {
+
+		    country_event = {id = 100001 days = 0}
+			
+		}
+        ai_chance = {factor = 1}
+    }
+}

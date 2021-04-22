@@ -760,3 +760,7 @@ EVTNAME1000001;The king of France has been crown in Reims !;;;;;;;;;x
 EVTDESC1000001;The king of France has been crown in Reims, giving him the right to rule over France by god ! what should we do ?;;;;;;;;;x
 EVTNAME1000002;French or Gallic ?;;;;;;;;;x
 EVTDESC1000002;We are in France for many decades now, we need choose between our Gallic or France heritage if we want stability in our nobility !;;;;;;;;;x
+EVTNAME1000003;$FROMCOUNTRY$ refuses to bow !;;;;;;;;;x
+EVTDESC1000003;$FROMCOUNTRY$ has refused to recognize the king of France as their true leader !;;;;;;;;;x
+EVTNAME1000004;$FROMCOUNTRY$ bows !;;;;;;;;;x
+EVTDESC1000004;$FROMCOUNTRY$ has  recognize the king of France as their true leader !;;;;;;;;;x
