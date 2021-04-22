@@ -49,7 +49,6 @@ political_decisions = {
 				}
 				exists = yes
     		}
-    		all_core = { add_core = FRA   }
     		country_event = 1000001
     	}
 		set_country_flag = crown_in_reims
