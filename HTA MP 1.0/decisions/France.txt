@@ -20,12 +20,40 @@ political_decisions = {
 		}
 	}
 
+#Crown in Reims !
+	crown_in_reims = {
+		potential = {
+			tag = FRA
+			primary_culture = french
+		}
+
+		allow = {
+			OR = {
+				is_secondary_power = yes
+				is_great_power = yes
+			}
+			prestige = 20
+			war = no
+			ow
+			ns = 428
+		}
+		effect = {
+ 			prestige = 10
+  			CMP = {country_event = 100001}
+			BRR = {country_event = 100001}
+			LOR = {country_event = 100001}
+			ORL = {country_event = 100001}
+			NRM = {country_event = 100001}
+			set_global_flag = crown_in_reims
+		}
+	}
+	
+
 # Return to the sea! (Reclaim interior cores, regain cores on the Normandy coast)
 	return_to_the_sea = {
 		picture = valparaiso_harbor
 		potential = {
-			tag = FRA
-			NOT = { has_country_flag = FRA_man_and_the_sea }
+			tag = FRAs
 		}
 		
 		allow = {
@@ -81,12 +109,16 @@ political_decisions = {
 		potential = {
 			tag = FRA
 			NOT = { has_country_flag = BRT_annexation_demanded }
-			has_global_flag = FRA_our_colony_returned_BRT
+			has_country_flag = crown_in_reims
 		}
 		
 		allow = {
-			2134 = { owned_by = FRA }
+			owns = 418
+			owns = 435
+			owns = 434
 			NOT = { truce_with = BRT}
+			state_n_government = 1
+
 		}
 		
 		effect = {
@@ -200,7 +232,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 50
+			prestige = 30
 			owns = 428
 			FRA = { exists = no }
 		}
@@ -283,69 +315,4 @@ political_decisions = {
 			}
 		}
 	}
-# The Nobility bows to the king of France !
-    nobility_bow = {
-        picture = gesture_of_defience
-        potential = {
-            tag = FRA
-            primary_culture = french
-        }
-        allow = {
-			prestige = 20
-			tag = FRA
-			OR = {
-				is_secondary_power = yes
-				is_great_power = yes
-			}
-            war = no
-            CMP = {
-				OR = {
-					AND = {
-						relation = {who = THIS value = 100}
-						exist = yes
-					}
-					in_sphere = THIS
-				}
-			}
-			NRM = {
-				OR = {
-					AND = {
-						relation = {who = THIS value = 100}
-						exist = yes
-					}
-					in_sphere = THIS
-				}
-			}
-			ORL = {
-				OR = {
-					AND = {
-						relation = {who = THIS value = 100}
-						exist = yes
-					}
-					in_sphere = THIS
-				}
-			}
-        }
-        effect = {
-            prestige = 20
-                any_country = {
-                    limit = {
-                        is_culture_group = french
-						NOT = { tag = THIS }
-						NOT = { has_country_flag = post_colonial_country }
-						OR = {
-						is_vassal = no
-						vassal_of = THIS
-						}
-					exists = yes
-                    }
-                    all_core = { add_core = FRA    }
-                    annex_to = THIS
-                }
-			set_global_flag = nobility_bow 
-            ai_will_do = {
-                factor = 1
-            }
-        }
-    }
 }
