@@ -974,7 +974,10 @@ annex_core_country = {
 		any_owned_province = { is_core = THIS }
 		NOT = {
 			any_owned_province = {
-				NOT = { is_core = THIS }
+				AND = {
+					NOT = { is_core = THIS }
+					is_colonial = no
+				}
 			}
 		}
 		NOT = { has_country_modifier = neutrality }
