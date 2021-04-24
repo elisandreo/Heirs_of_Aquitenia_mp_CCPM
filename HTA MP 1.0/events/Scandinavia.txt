@@ -575,7 +575,7 @@ country_event = {
 		2587 = {
                     add_core = THIS 
                 }
-				336 = {
+		336 = {
                     add_core = THIS 
                 }
 		337 = {
@@ -634,6 +634,9 @@ country_event = {
 		272 = {
                     add_core = THIS 
                 }
+		304 = {
+		    add_core = THIS
+		} 
 		add_accepted_culture = scots
 	}
 	option = {
@@ -669,7 +672,7 @@ country_event = {
 		357 = {
                     add_core = THIS 
                 }
-		358 ={
+		358 = {
                     add_core = THIS 
                 }
 		359 = {
@@ -696,4 +699,142 @@ country_event = {
 	
 }
 
+country_event = {
+	id = 496001
+
+	title = "The British Question"
+	desc = "Shall we claim the lands of the Celts or of the Anglos?"
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "To the Celts!"
+		add_accepted_culture = irish
+		254 = {
+                    add_core = THIS 
+                }
+		255 = {
+                    add_core = THIS 
+                }
+		256 = {
+                    add_core = THIS 
+                }
+		257 = {
+                    add_core = THIS 
+                }
+		258 = {
+                    add_core = THIS 
+                }
+		259 = {
+                    add_core = THIS 
+                }
+		260 = {
+                    add_core = THIS 
+                }
+		261 = {
+                    add_core = THIS 
+                }
+		262 = {
+                    add_core = THIS 
+                }
+		263 = {
+                    add_core = THIS 
+                }
+		264 = {
+                    add_core = THIS 
+                }
+		265 = {
+                    add_core = THIS 
+                }
+		set_country_flag = went_irish
+	}
+	option = {
+		name = "To the Anglos!"
+		set_country_flag = went_anglo
+		add_accepted_culture = aenglisc
+		277 = {
+                    add_core = THIS 
+                }
+		278 = {
+                    add_core = THIS 
+                }
+		279 = {
+                    add_core = THIS 
+                }
+		280 = {
+                    add_core = THIS 
+                }
+		281 = {
+                    add_core = THIS 
+                }
+		282 = {
+                    add_core = THIS 
+                }
+		283 = {
+                    add_core = THIS 
+                }
+		284 = {
+                    add_core = THIS 
+                }
+		285 = {
+                    add_core = THIS 
+                }
+		286 = {
+                    add_core = THIS 
+                }
+		287 = {
+                    add_core = THIS 
+                }
+		288 = {
+                    add_core = THIS 
+                }
+		289 = {
+                    add_core = THIS 
+                }
+		290 = {
+                    add_core = THIS 
+                }
+		291 = {
+                    add_core = THIS 
+                }
+		292 = {
+                    add_core = THIS 
+                }
+		293 = {
+                    add_core = THIS 
+                }
+		294 = {
+                    add_core = THIS 
+                }
+		295 = {
+                    add_core = THIS 
+                }
+		296 = {
+                    add_core = THIS 
+                }
+		297 = {
+                    add_core = THIS 
+                }
+		298 = {
+                    add_core = THIS 
+                }
+		299 = {
+                    add_core = THIS 
+                }
+		300 = {
+                    add_core = THIS 
+                }
+		301 = {
+                    add_core = THIS 
+                }
+		302 = {
+                    add_core = THIS 
+                }
+		303 = {
+                    add_core = THIS 
+                }
+	}
+}
 # hi there :) #
