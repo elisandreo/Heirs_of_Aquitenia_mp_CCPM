@@ -321,12 +321,12 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 6
 	}
 
 	option = {
 		name = "The crown of Catalonia is ours by right !"
-		CAT = {country_event = 1000001}
+		CAT = {country_event = 1000006}
 		prestige = 5
 		relation = {who = CAS value = -100}
 		ai_chance = {
