@@ -154,4 +154,21 @@ political_decisions = {
 			}
 		}
 	}
+	accept_jews = {
+		potential = {
+			primary_culture = polish
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			prestige = 60
+			is_greater_power = yes
+		}
+		effect = {
+			add_accepted_culture = ashkenazi
+			militancy = 1
+			prestige = 5
+		}
+	}
+		
 }

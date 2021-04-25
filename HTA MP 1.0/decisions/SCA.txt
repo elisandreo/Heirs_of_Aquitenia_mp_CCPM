@@ -232,6 +232,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			badboy = 10
+			country_event = 496001
 			set_country_flag = went_wester
 		}
 	}
