@@ -375,7 +375,7 @@ country_event = {
 	id = 1000008
 	title = "EVTNAME1000008"
 	desc = "EVTDESC1000008"
-	picture = "succession"
+	picture = "Catalonia_rise_up"
 
 	is_triggered_only = yes
 
