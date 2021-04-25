@@ -1,0 +1,152 @@
+country_event = {
+	id = 1000006
+    title = "EVTNAME1000006"
+	desc = "EVTDESC1000006"
+	picture = "bow_king"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We bow !"
+        AQT = {country_event = 1000007}
+        AQT = {
+            create_vassal = THIS
+        }
+        ai_chance = {
+			factor = 0.5
+             modifier = {
+                factor = 0.25
+                relation = { who = AQT value = 50 }
+            }
+            modifier = {
+                factor = 0.5
+                relation = { who = AQT value = 100 }
+            }
+            modifier = {
+                factor = 0.75
+                relation = { who = AQT value = 150 }
+            }
+            modifier = {
+                factor = 1
+                relation = { who = AQT value = 200 }
+            }
+            modifier = {
+                factor = 0.5
+                AQT = {war = no}
+            }
+		}
+    }
+    option = {
+        name = "We will stand and fight!"
+        AQT = {country_event = 1000008}
+        AQT = {
+            war = {
+			    target = THIS
+			    attacker_goal = {
+				    casus_belli = make_puppet
+			    }
+			    defender_goal = {
+				    casus_belli = statu_quo
+			    }
+            }
+        }
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+                factor = 0.25
+                relation = { who = AQT value = -50 }
+            }
+            modifier = {
+                factor = 0.5
+                relation = { who = AQT value = -100 }
+            }
+            modifier = {
+                factor = 0.75
+                relation = { who = AQT value = -150 }
+            }
+            modifier = {
+                factor = 1
+                relation = { who = AQT value = -200 }
+            }
+            modifier = {
+                factor = 0.5
+                AQT = {war = yes}
+            }
+		}
+    }
+}
+
+country_event = {
+	id = 1000009
+	title = "EVTNAME1000009"
+	desc = "EVTDESC1000009"
+	picture = "Catalonia_rise_up"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CAT
+		year = 1850
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+    option = {
+        name = "It's time to rise up against the oppressor"
+        AQT = {country_event = 1000007}
+        prestige = 10
+        leadership = 100
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+                factor = 0.25
+                relation = { who = AQT value = -50 }
+            }
+            modifier = {
+                factor = 0.5
+                relation = { who = AQT value = -100 }
+            }
+            modifier = {
+                factor = 0.75
+                relation = { who = AQT value = -150 }
+            }
+            modifier = {
+                factor = 1
+                relation = { who = AQT value = -200 }
+            }
+            modifier = {
+                factor = 0.5
+                AQT = {war = yes}
+            }
+		}
+    }
+     option = {
+        name = "It's time to accept the supremacy of Aquitaine"
+        AQT = {country_event = 1000008}
+        prestige = -10
+        ai_chance = {
+			factor = 0.5
+            modifier = {
+                factor = 0.25
+                relation = { who = AQT value = 50 }
+            }
+            modifier = {
+                factor = 0.5
+                relation = { who = AQT value = 100 }
+            }
+            modifier = {
+                factor = 0.75
+                relation = { who = AQT value = 150 }
+            }
+            modifier = {
+                factor = 1
+                relation = { who = AQT value = 200 }
+            }
+            modifier = {
+                factor = 0.5
+                AQT = {war = no}
+            }
+		}
+    }

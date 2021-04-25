@@ -764,3 +764,17 @@ EVTNAME1000003;$FROMCOUNTRY$ refuses to bow !;;;;;;;;;x
 EVTDESC1000003;$FROMCOUNTRY$ has refused to recognize the king of France as their true leader !;;;;;;;;;x
 EVTNAME1000004;$FROMCOUNTRY$ bows !;;;;;;;;;x
 EVTDESC1000004;$FROMCOUNTRY$ has  recognize the king of France as their true leader !;;;;;;;;;x
+EVTNAME1000005;The succession of the Duchy of Catalonia;;;;;;;;;x
+EVTDESC1000005;The ruler of Catalonia died without an heir, leaving the duchy of Catalonia vulnerable to foreign threat. But we have the right to claim it's crown as the king of Aquitaine was the nephew of the previous ruler of Catalonia !
+EVTNAME1000006;The Aquitainian king want our throne !;;;;;;;;;x
+EVTDESC1000006;The old ruler of Catalonia died in peace but without any legitimate heir. The king of Aquitainia, it's nephew, claim the throne of Catalonia but proposes a vassalisation instead of a direct annexation.;;;;;;;;;x
+EVTNAME1000007;Catalonia accept the Aquitanian rule !;;;;;;;;;x
+EVTDESC1000007;Despite some tension in Catalonia, it's government has accepted our rule in exchange for economic help and trade treaty;;;;;;;;;x
+EVTNAME1000008;Catalonia refuses the Aquitainian rule !;;;;;;;;;x
+EVTDESC1000008;Despite our rigthful claim to the throne of Catalonia, they decided to refuse our offer !;;;;;;;;;x
+EVTNAME1000009;Integration into Aquitaine ?;;;;;;;;;x
+EVTDESC1000009;It's been more than 10 years since our vassalisation by the king ot Aquitaine, is it time to rise up against this oppressor or do we bow and aknowledge it's claim over Catalonia ?;;;;;;;;;x
+EVTNAME10000010;The Catalonian integration;;;;;;;;;x
+EVTDESC10000010;Catalonia has accepted our rule for more than 10 years now, it's time to finally integrate this duchy as a state of our nation !;;;;;;;;;x
+EVTNAME10000001;An old general;;;;;;;;;x
+EVTDESC10000001;The brilliant 50 years old general Napoleone Buonaparte h%as decided to serve it's nation once again and he stills hopes for greatness ! ;;;;;;;;;x

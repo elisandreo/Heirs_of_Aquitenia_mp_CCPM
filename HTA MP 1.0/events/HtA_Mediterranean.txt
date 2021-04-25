@@ -3,6 +3,64 @@
 
 #Corsica, Aquitania, PDN, and Naples/Italy
 
+#Napoleon Bonaparte 
+country_event = {
+	id = 10000001
+	picture = "Napoleone"
+	trigger = {
+		tag = CRS
+		year = 1836
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	title = "EVTNAME10000001"
+	desc = "EVTDESC10000001"
+	immediate = {
+		define_general = {
+			name = "Napoleone Buonaparte"
+			personality = persistant
+			personality = balanced_p
+			personality = coolminded
+			personality = inspiring
+			personality = gallant
+			personality = diplomatic
+			personality = tactful
+			personality = polite
+			personality = hellbent
+			personality = choleric
+			personality = harsh
+			personality = implacable
+			personality = careful
+			personality = arrogant
+			personality = glory_hound
+			personality = imperious
+
+			background = artillerist
+			background = school_of_defense
+			background = school_of_offense
+			background = school_of_the_bayonet
+			background = school_of_firepower
+			background = spoiled
+			background = sycophant
+			background = generals_aide
+			background = engineer
+			background = drillmaster
+			background = gifted_administrator
+			background = innovative_tactician
+			background = natural_born_leader
+			background = megalomaniac
+		}
+	}
+	option = {
+		name = "May he reign over Europe !"		
+	}
+}
+
 #Corsican Revolution
 country_event = {
 	id = 51650
