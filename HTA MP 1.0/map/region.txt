@@ -311,11 +311,15 @@ GER_565 = { 565 583 584 } #Hesse
 
 GER_566 = { 564 566 567 568 } #Kassel
 
-PRU_570 = { 569 570 571 2560 } #Palatinate
+PRU_570 = { 569 2560 } #Palatinate
 
-PRU_575 = { 575 576 577 578 2561 } #Rheinland/Northern Rheinland
+PRU_571 = { 570 571 } #Southern Rheinland
 
-PRU_578 = { 397 572 573 574 579 } #Eastern Rheinland/Southern Rheinland
+PRU_572 = { 578 579 2561 } #Eastern Rheinland
+
+PRU_575 = { 575 576 577 } #Rheinland/Northern Rheinland
+
+PRU_578 = { 397 572 573 574 } #Western Rheinland
 
 PRU_581 = { 581 580 582 585 } #Westfalen
 
