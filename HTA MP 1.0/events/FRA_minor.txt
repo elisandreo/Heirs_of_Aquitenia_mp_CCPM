@@ -46,7 +46,6 @@ country_event = {
 			    }
             }
         }
-        FRA = {badboy = -6}
         ai_chance = {
 			factor = 0.5
             modifier = {
@@ -81,7 +80,7 @@ country_event = {
 
     option = {
         name = "We will meet on the Battlefield then !"
-        badboy = 2
+        badboy = -6
         prestige = 1
         
     }

@@ -180,10 +180,9 @@ political_decisions = {
 						accepted_culture = french
 					}
 					NOT = { tag = THIS }
-						OR = {
-							is_vassal = no
-							vassal_of = THIS
-						}
+					OR = {
+						vassal_of = FRA
+					}
 					exists = yes
     			}
     			annex_to = THIS
