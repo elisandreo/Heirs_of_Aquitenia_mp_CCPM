@@ -46,6 +46,7 @@ country_event = {
 			    }
             }
         }
+        FRA = {badboy = -6}
         ai_chance = {
 			factor = 0.5
             modifier = {
