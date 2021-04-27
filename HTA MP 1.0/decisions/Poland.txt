@@ -7,6 +7,7 @@ political_decisions = {
 			NOT = { exists = POL }
 			NOT = { has_country_flag = post_colonial_country }
 			NOT = { tag = ZAC }
+			NOT = { tag = PLC }
 		}
 
 		allow = {
@@ -170,5 +171,59 @@ political_decisions = {
 			prestige = 5
 		}
 	}
-		
+	reconsider_lithuania = {
+		potential = {
+			tag = POL
+			has_country_flag = granted_lithuanian_independance
+			exists = LIT
+		}
+		allow = {
+			state_n_government = 1
+			war = no
+			prestige = 60
+			is_greater_power = yes
+		}
+		effect = {
+			badboy = 5
+			create_vassal = LIT
+		}
+	}
+	form_PLC = {
+		potential = {
+			tag = POL
+			is_our_vassal = LIT
+		}
+		allow = {
+			prestige = 60
+			owns = 706
+			is_greater_power = yes
+			war = no
+		}
+		effect = {
+			change_tag = PLC
+			inherit = LIT
+			add_accepted_culture = lithuanian
+			add_accepted_culture = ruthenian
+			719 = {
+                    		add_core = THIS 
+                	}
+			936 = {
+                    		add_core = THIS 
+                	}
+			937 = {
+                    		add_core = THIS 
+                	}
+			LIT = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			RUT = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			prestige = 15
+		}
+	}	
 }

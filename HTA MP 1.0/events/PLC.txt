@@ -1,0 +1,27 @@
+country_event = {
+	id = 363600
+	title = "Death of the King of Lithuania"
+	desc = "The Lithuanian King has died, and a personal union between us and lithuania."
+	fire_only_once = yes
+
+	trigger = {
+		year = 1838
+		tag = POL
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "A Perfect Union"
+		badboy = 5
+		prestige = 5
+		create_vassal = LIT
+	}
+	option = {
+		name = "Set up a new monarchy for them."
+		badboy = -5
+		prestige = 10
+		set_country_flag = granted_lithuanian_independance
+	}
+}
