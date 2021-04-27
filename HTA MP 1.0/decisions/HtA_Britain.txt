@@ -8,7 +8,6 @@ political_decisions = {
 			280 = { owned_by = SCO }
 			271 = { owned_by = IRE }
 			NOT = { has_country_flag = negotiate_with_aen }
-			NOT = { has_country_flag = accept_france_heritage }
 		}
 		
 		allow = {
@@ -40,7 +39,6 @@ political_decisions = {
 				has_global_flag = no_treaty_of_wyk
 			}
 			NOT = { has_country_flag = glaschu_ultimatum }
-			NOT = { has_country_flag = accept_france_heritage }
 		}
 		
 		allow = {
@@ -71,7 +69,6 @@ political_decisions = {
 				tag = ABN
 			}
 			NOT = { has_country_flag = cymru_claimed }
-			NOT = { has_country_flag = accept_france_heritage }
 		}
 		
 		allow = {
@@ -108,7 +105,6 @@ political_decisions = {
 		potential = {
 			tag = AEN
 			NOT = { has_country_flag = alba_reclaimed }
-			NOT = { has_country_flag = accept_france_heritage }
 			has_country_flag = cymru_claimed
 		}
 		
@@ -116,6 +112,7 @@ political_decisions = {
 			is_greater_power = yes
 			SCO = { is_greater_power = no }
 			war = no
+			nationalism_n_imperialism = 1
 			OR = {
 				is_our_vassal = SCO
 				AND = {
@@ -163,7 +160,6 @@ political_decisions = {
 			}
 			has_country_flag = alba_reclaimed
 			NOT = { has_country_flag = overlordship_eire }
-			NOT = { has_country_flag = accept_france_heritage }
 			is_greater_power = yes
 		}
 		
@@ -210,7 +206,6 @@ political_decisions = {
 		potential = {
 			tag = CLT
 			NOT = { has_country_flag = wales_cornwall_claimed }
-			NOT = { has_country_flag = accept_france_heritage }
 		}
 		
 		allow = {
@@ -237,7 +232,6 @@ political_decisions = {
 		potential = {
 			tag = CLT
 			NOT = { has_country_flag = brittany_claimed }
-			NOT = { has_country_flag = accept_france_heritage }
 			has_country_flag = wales_cornwall_claimed
 		}
 		
@@ -261,12 +255,12 @@ political_decisions = {
 			tag = AEN
 			is_greater_power = yes
 			NOT = { has_global_flag = albina_formed }
-			NOT = { has_country_flag = accept_france_heritage }
 			has_country_flag = alba_reclaimed
 			ABN = { exists = no }
 		}
 		
 		allow = {
+			nationalism_n_imperialism = 1
 			prestige = 75
 			SCO = {
 				exists = no
@@ -299,7 +293,6 @@ political_decisions = {
 			is_greater_power = yes
 			has_global_flag = albina_formed
 			has_country_flag = alba_reclaimed
-			NOT = { has_country_flag = accept_france_heritage }
 		}
 		
 		allow = {
@@ -337,7 +330,6 @@ political_decisions = {
 			NOT = { exists = IRE }
 			IRE = { all_core = { owned_by = THIS } }
 			NOT = { has_country_flag = irish_accepted }
-			NOT = { has_country_flag = accept_france_heritage }
 		}
 		
 		allow = {

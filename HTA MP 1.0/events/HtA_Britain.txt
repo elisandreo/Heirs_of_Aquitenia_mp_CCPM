@@ -1195,7 +1195,7 @@ country_event = {
 	}
 }
 
-#Seumas ï¿½ Mï¿½ille's education reforms
+#Seumas Ó Máille's education reforms
 country_event = {
 	id = 50124
 	title = "EVTNAME50124"
