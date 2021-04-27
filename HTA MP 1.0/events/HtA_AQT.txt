@@ -1,5 +1,7 @@
 #Events 50000, 50002, and later 50220-50249
 
+
+
 #Death of King Raimond VIII
 country_event = {
 	id = 50000
@@ -164,7 +166,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "It is the dawn of a New Aquitània."
+		name = "It is the dawn of a New Aquitï¿½nia."
 		set_country_flag = revolution_in_blood
 		clr_country_flag = liberal_revolution_in_progress
 		government = democracy
@@ -304,4 +306,130 @@ country_event = {
 	}
 }
 
+#Vassalize Catalonia
+country_event = {
+	id = 1000005
+	title = "EVTNAME1000005"
+	desc = "EVTDESC1000005"
+	picture = "succession"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AQT
+		year = 1836
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "The crown of Catalonia is ours by right !"
+		CAT = {country_event = 1000006}
+		prestige = 5
+		relation = {who = CAS value = -100}
+		ai_chance = {
+			factor = 0.75
+            modifier = {
+                factor = 0.25
+                war = no
+            }
+		}
+	}
+	option = {
+		name = "we can let them rule on their own for now"
+		prestige = -5
+		relation = {who = CAS value = 100}
+		influence = {who = CAT value = -100}
+		ai_chance = {
+			factor = 0.25
+            modifier = {
+                factor = 0.25
+                war = yes
+            }
+		}
+	}
+}
+
+country_event = {
+	id = 1000007
+	title = "EVTNAME1000007"
+	desc = "EVTDESC1000007"
+	picture = "succession"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Prosperity and peace in Catalonia"
+		prestige = 5
+		badboy = 1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#War with Catalonia
+country_event = {
+	id = 1000008
+	title = "EVTNAME1000008"
+	desc = "EVTDESC1000008"
+	picture = "Catalonia_rise_up"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We will crush them"
+		prestige = 5
+		relation = {who = CAS value = -100}
+		relation = {who = CAT value = -100}
+		ai_chance = {
+			factor = 0.75
+            modifier = {
+                factor = 0.25
+                war = no
+            }
+		}
+	}
+	option = {
+		name = "We can't deal with this revolt, they will be free"
+		prestige = -5
+		relation = {who = CAT value = 100}
+		relation = {who = CAS value = 100}
+		influence = {who = CAT value = -100}
+		ai_chance = {
+			factor = 0.25
+            modifier = {
+                factor = 0.25
+                war = yes
+            }
+		}
+	}
+}
+
+country_event = {
+	id = 10000010
+	title = "EVTNAME10000010"
+	desc = "EVTDESC10000010"
+	picture = "succession"
+
+	is_triggered_only = yes
+
+	option = {
+		name ="It's time to integrate Catalonia into our realm !"
+		effect = {
+			prestige = 10
+			badboy = 3
+			set_country_flag = catalans_embraced
+			inherit = CAT
+			CAT = {
+				all_core = { add_core = AQT } }
+			add_accepted_culture = catalan
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
 #Repeatable Event to remove influence from countries which aren't democratic after the revolution
