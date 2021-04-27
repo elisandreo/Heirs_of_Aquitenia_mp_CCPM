@@ -343,12 +343,11 @@ political_decisions = {
 			has_country_flag = crown_in_reims
 		}
 		allow = {
-			CMP = { all_core = { owned_by = THIS } }
+			
 		}
 		effect = {
 
 		}
 	}
-	
 
 }
