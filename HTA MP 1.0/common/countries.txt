@@ -85,6 +85,7 @@ BYE		= "countries/Belarus.txt"
 CRI		= "countries/Crimea.txt"
 HUN		= "countries/Hungary.txt"
 POL		= "countries/Poland.txt"
+PLC		= "countries/Poland-Lithuania.txt"
 PRH		= "countries/Prague.txt"
 RUT		= "countries/Ruthenia.txt"
 SIE		= "countries/Siebenburgen.txt"	#Ardeal/Transylvania

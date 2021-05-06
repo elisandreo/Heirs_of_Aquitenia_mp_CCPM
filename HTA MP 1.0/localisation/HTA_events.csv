@@ -756,25 +756,3 @@ EVTNAME97097;Enable Story Railroading?;;;;;;;;;;;x
 EVTDESC97097;The story in the Heirs to Aquitània mod has been crafted in such a way that some events simply must happen the way the mod's maker, Savs, intends them to. This is meant to make the sequence of events in the game more challenging (maybe), interesting, and most of all, predictable. He's included this because this mod will be the basis of his megacampaign AAR, and this is part of the story. Anyways, don't select this option if you don't want a game where the outcomes of many major events are already essentially decided.;;;;;;;;;;;;;;x
 EVTNAME97098;Staking our claim;;;;;;;;;x
 EVTDESC97098;There yet remain unclaimed areas of the interior of the Amerigan continent. Our burgeoning population is searching for new opportunities, and have begun to make their way to the uncolonised lands of their own accord, pledging to remain loyal to our government.;;;;;;;;;;;;;x
-EVTNAME1000001;The king of France has been crown in Reims !;;;;;;;;;x
-EVTDESC1000001;The king of France has been crown in Reims, giving him the right to rule over France by god ! what should we do ?;;;;;;;;;x
-EVTNAME1000002;French or Gallic ?;;;;;;;;;x
-EVTDESC1000002;We are in France for many decades now, we need choose between our Gallic or France heritage if we want stability in our nobility !;;;;;;;;;x
-EVTNAME1000003;$FROMCOUNTRY$ refuses to bow !;;;;;;;;;x
-EVTDESC1000003;$FROMCOUNTRY$ has refused to recognize the king of France as their true leader !;;;;;;;;;x
-EVTNAME1000004;$FROMCOUNTRY$ bows !;;;;;;;;;x
-EVTDESC1000004;$FROMCOUNTRY$ has  recognize the king of France as their true leader !;;;;;;;;;x
-EVTNAME1000005;The succession of the Duchy of Catalonia;;;;;;;;;x
-EVTDESC1000005;The ruler of Catalonia died without an heir, leaving the duchy of Catalonia vulnerable to foreign threat. But we have the right to claim it's crown as the king of Aquitaine was the nephew of the previous ruler of Catalonia !
-EVTNAME1000006;The Aquitainian king want our throne !;;;;;;;;;x
-EVTDESC1000006;The old ruler of Catalonia died in peace but without any legitimate heir. The king of Aquitainia, it's nephew, claim the throne of Catalonia but proposes a vassalisation instead of a direct annexation.;;;;;;;;;x
-EVTNAME1000007;Catalonia accept the Aquitanian rule !;;;;;;;;;x
-EVTDESC1000007;Despite some tension in Catalonia, it's government has accepted our rule in exchange for economic help and trade treaty;;;;;;;;;x
-EVTNAME1000008;Catalonia refuses the Aquitainian rule !;;;;;;;;;x
-EVTDESC1000008;Despite our rigthful claim to the throne of Catalonia, they decided to refuse our offer !;;;;;;;;;x
-EVTNAME1000009;Integration into Aquitaine ?;;;;;;;;;x
-EVTDESC1000009;It's been more than 10 years since our vassalisation by the king ot Aquitaine, is it time to rise up against this oppressor or do we bow and aknowledge it's claim over Catalonia ?;;;;;;;;;x
-EVTNAME10000010;The Catalonian integration;;;;;;;;;x
-EVTDESC10000010;Catalonia has accepted our rule for more than 10 years now, it's time to finally integrate this duchy as a state of our nation !;;;;;;;;;x
-EVTNAME10000001;An old general;;;;;;;;;x
-EVTDESC10000001;The brilliant 50 years old general Napoleone Buonaparte h%as decided to serve it's nation once again and he stills hopes for greatness ! ;;;;;;;;;x
