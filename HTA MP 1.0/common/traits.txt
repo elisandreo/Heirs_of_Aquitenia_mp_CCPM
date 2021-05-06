@@ -402,14 +402,6 @@ personality = {
 		morale = -0.30
 		reliability = -0.03
 	}
-	napoleon_school = {
-		attack = 3
-		defence = 3
-		organisation = 0.3
-		speed = 0.2
-		morale = 0.4
-		reliability = 0.5
-	}
 }
 
 background = {
@@ -631,12 +623,5 @@ background = {
 	}
 	incompetent = {
 		reliability = -0.03
-	}
-	tactical_genius = {
-		attack = 3
-		defence = 3
-		organisation = 0.3
-		speed = 0.2
-		morale = 0.4
 	}
 }
