@@ -39,7 +39,7 @@ political_decisions = {
 			owns = 408
 		}
 		effect = {
- 		prestige = 10
+ 		prestige = 15
   		any_country = {
         	limit = {
             	is_culture_group = french
@@ -88,7 +88,8 @@ political_decisions = {
 			has_country_flag = crown_in_reims
 			NOT = { has_global_flag = FRA_wants_their_colonies_BRT }
 			NOT = { has_country_flag = BRT_annexation_demanded }
-			NOT = BRT = {vassal_of = THIS}
+			NOT = { has_country_flag = no_more_nobles }
+			BRT = { is_vassal = no }
 		}
 		
 		allow = {
@@ -120,7 +121,6 @@ political_decisions = {
 		potential = {
 			tag = FRA
 			NOT = { has_country_flag = BRT_annexation_demanded }
-			NOT = { has_country_flag = no_more_nobles }
 			has_country_flag = crown_in_reims
 			BRT = { exists = yes }
 			BRT = { is_vassal = no }
@@ -189,7 +189,9 @@ political_decisions = {
 					exists = yes
     			}
     			annex_to = THIS
-				add_core = THIS
+				any_owned_province = {
+					add_core = THIS
+				}	
     		}
 			remove_core = CMP
 			remove_core = ORL
@@ -265,7 +267,6 @@ political_decisions = {
 		picture = gesture_of_defiance
 		potential = {
 			tag = FRA
-			has_country_flag = normandy
 			NRM = { exists = no }
 			NOT = { has_country_flag = NRM_cores_removed }
 		}
@@ -289,7 +290,6 @@ political_decisions = {
 		picture = gesture_of_defiance
 		potential = {
 			tag = FRA
-			has_country_flag = orleans
 			ORL = { exists = no }
 			NOT = { has_country_flag = ORL_cores_removed }
 		}
@@ -312,7 +312,6 @@ political_decisions = {
 		picture = gesture_of_defiance
 		potential = {
 			tag = FRA
-			has_country_flag = champagne
 			CMP = { exists = no }
 			NOT = { has_country_flag = CMP_cores_removed }
 		}
@@ -331,12 +330,24 @@ political_decisions = {
 		}
 	}
 
-# The Picards and Walloons are French!
-	picardie_n_ardene = {
+	a_way_north = {
 		potential = {
 			tag = FRA
-			has_country_flag = no_more_nobles
-			has_country_flag = crown_in_reims
+		}
+		allow = {
+			state_n_government = 1
+			prestige = 30
+		}
+		effect = {
+			badboy = 3
+			prestige = 10
+		}
+	}
+
+	picardie_n_ardene = {
+		picture = gesture_of_defiance
+		potential = {
+			tag = FRA
 		}
 		allow = {
 			owns = 425
@@ -345,7 +356,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 5
-			badboy = 6
+			badboy = 3
 			add_core = 399 
 			add_core = 400 
 			add_core = 401 
@@ -359,6 +370,7 @@ political_decisions = {
 	}
 
 	acceptance_of_picardie = {
+		picture = gesture_of_defiance
 		potential = {
 			tag = FRA
 			has_country_flag = claim_ardene_n_picardie
@@ -384,7 +396,6 @@ political_decisions = {
 			tag = FRA
 			year = 1850
 			has_country_flag = acceptance_of_picards
-			has_country_flag = two_state_solution
 			NOT = {has_country_flag = german_compromise}
 		}
 		allow = {
@@ -455,7 +466,6 @@ political_decisions = {
 			tag = FRA
 			year = 1850
 			has_country_flag = acceptance_of_picards
-			has_country_flag = two_state_solution
 			has_country_flag = german_compromise
 		}
 		allow = {
@@ -484,7 +494,6 @@ political_decisions = {
 			GER = exist
 			year = 1850
 			has_country_flag = acceptance_of_picards
-			has_country_flag = two_state_solution
 			NOT = { has_country_flag = greater_france }
 		}
 		allow = {
