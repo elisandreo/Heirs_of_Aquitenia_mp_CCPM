@@ -95,9 +95,12 @@ country_event = {
 
     option = {
         name = "It's time to rise up against the oppressor"
-        AQT = {country_event = 1000007}
+        AQT = {country_event = 1000011}
         prestige = 10
         leadership = 100
+        AQT = {
+            release_vassal = THIS
+        }
         ai_chance = {
 			factor = 0.5
             modifier = {
@@ -124,7 +127,7 @@ country_event = {
     }
      option = {
         name = "It's time to accept the supremacy of Aquitaine"
-        AQT = {country_event = 1000008}
+        AQT = {country_event = 1000010}
         prestige = -10
         ai_chance = {
 			factor = 0.5

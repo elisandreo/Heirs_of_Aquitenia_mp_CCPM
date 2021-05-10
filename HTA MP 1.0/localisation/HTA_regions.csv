@@ -112,9 +112,10 @@ PRU_554;Thuringia;;;;;;;;;;;;x
 SAX_558;Saxony;;;;;;;;;;;;x        
 GER_565;Hesse;;;;;;;;;;;;x,,,
 GER_566;Kassel;;;;;;;;;;;x,,,
-PRU_570;Palatinate;;;;;;;;;;;;x    
+PRU_570;Palatinate;;;;;;;;;;;;x
+PRU_572;Eastern Rheinland;;;;;;;;;;;;x
 PRU_575;Northern Rheinland;;;;;;;;;;;;;x,,,
-PRU_578;Southern Rheinland;;;;;;;;;;;x,,,
+PRU_578;Western Rheinland;;;;;;;;;;;x,,,
 BAV_595;Franconia;;;;;;;;;;;;x     
 BAV_599;Upper Bavaria;;;;;;;;;;;;x 
 SWI_603;Helvetia;;;;;;;;;x,,,

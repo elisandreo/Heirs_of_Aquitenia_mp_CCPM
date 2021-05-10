@@ -12,6 +12,7 @@ country_event = {
         FRA = {
             create_vassal = THIS
         }
+        FRA = { badboy = -6 }
         ai_chance = {
 			factor = 0.5
             modifier = {
@@ -35,6 +36,7 @@ country_event = {
     option = {
         name = "We will stand and fight!"
         FRA = {country_event = 1000003}
+        FRA = { badboy = -2}
         FRA = {
             war = {
 			    target = THIS
@@ -80,13 +82,14 @@ country_event = {
 
     option = {
         name = "We will meet on the Battlefield then !"
-        badboy = -6
         prestige = 1
+
         
     }
     option = {
         name="They can stay free for now..."
         prestige = -5
+        badboy = -2
         ai_chance = {
             factor = 0.25
             modifier = {
@@ -109,6 +112,7 @@ country_event = {
 
     option = {
         name = "A new era for the kingdom of France !"
+        prestige = 1
         ai_chance = {factor = 1}
     }
 }

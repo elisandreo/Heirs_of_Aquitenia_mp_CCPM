@@ -114,7 +114,7 @@ country_event = {
 		BRT = { treasury = 50000 }
 		2134 = {
 			secede_province = FRA
-			change_province_name = "Îles Bleues"
+			change_province_name = "ï¿½les Bleues"
 			remove_core = BRT
 			add_core = FRA
 		}
@@ -537,7 +537,7 @@ country_event = {
 		name = "Let it be the first of many victories!"
 		prestige = 10
 		2134 = {
-			change_province_name = "Îles Bleues"
+			change_province_name = "ï¿½les Bleues"
 			remove_core = BRT
 			add_core = FRA
 		}
@@ -844,7 +844,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Gloire à la Patrie!"
+		name = "Gloire ï¿½ la Patrie!"
 		prestige = 5
 		BRT = { all_core = { add_core = THIS } }
 		421 = { change_province_name = "St. Brieuc" }
@@ -852,6 +852,7 @@ country_event = {
 		423 = { change_province_name = "Nantes" }
 		424 = { change_province_name = "Rennes" }
 		422 = { state_scope = { change_region_name = "Bretagne" } }
+		FRA = { accepted_culture = Bretons}
 		set_global_flag = french_bretagne
 	}
 }
@@ -874,7 +875,6 @@ country_event = {
 	
 	trigger = {
 		tag = FRA
-		has_country_flag = bar_lorraine_claimed
 		BRR = { all_core = { is_core = FRA owned_by = FRA } }
 		LOR = { all_core = { is_core = FRA owned_by = FRA } }
 		NOT = { has_country_flag = bar_lorraine_cores_removed }
@@ -900,4 +900,52 @@ country_event = {
 		set_country_flag = bar_lorraine_cores_removed
 	}
 }
-			
+
+#German compromise
+country_event = {
+	id = 1000013
+	title = "EVTNAME1000013"
+	desc = "EVTDESC1000013"
+	picture = "Napoleon_III_Otto_von_Bismarck"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "A peaceful resolution"
+		prestige = 5
+		relation = {who = GER value = 100}
+		relation = {who = WLL value = -100}
+		add_core = 392
+		add_core = 393
+		add_core = 394
+		add_core = 395
+		add_core = 396
+		add_core = 398
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 1000014
+	title = "EVTNAME1000014"
+	desc = "EVTDESC1000014"
+	picture = "Napoleon_III_Otto_von_Bismarck"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "It's war then"
+		prestige = -5
+		relation = {who = GER value = -100}
+		casus_belli = {
+				target = GER
+				type = acquire_state
+				months = 12
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
