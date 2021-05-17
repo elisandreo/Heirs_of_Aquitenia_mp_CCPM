@@ -483,4 +483,52 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 1000016
+	title = "EVTNAME1000016"
+	desc = "EVTDESC1000016"
+	picture = "National_union" 
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We will cooperate with France for the two Crown solution !"
+		prestige = -5
+		create_alliance = FRA
+		pop_growth = 0.01
+		tax_eff = 5
+	}
+	option = {
+		name = "Only one ruler shall rule over France !"
+		prestige = 10
+		FRA = {
+            all_core = {
+				add_core = AQT
+		    }
+        }
+	}
+	option = {
+		name = "We aren't interested in this France thing"
+	}
+}
+
+country_event = {
+	id = 1000017
+	title = "EVTNAME1000017"
+	desc = "EVTDESC1000017"
+	picture = "National_union"
+
+	is_triggered_only = yes
+
+}
+
+country_event = {
+	id = 1000018
+	title = "EVTNAME10000178"
+	desc = "EVTDESC1000018"
+	picture = "National_union"
+
+	is_triggered_only = yes
+}
+
 #Repeatable Event to remove influence from countries which aren't democratic after the revolution

@@ -2,6 +2,7 @@ owner = NET
 controller = NET
 add_core = NET
 add_core = LEO
+add_core = FRK
 trade_goods = cattle
 life_rating = 35
 state_building = {

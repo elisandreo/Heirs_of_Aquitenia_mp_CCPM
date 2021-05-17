@@ -1,6 +1,7 @@
 owner = LOR
 controller = LOR
 add_core = LOR
+add_core = FRK
 trade_goods = sulphur
 life_rating = 35
 

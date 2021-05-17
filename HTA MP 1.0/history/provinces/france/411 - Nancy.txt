@@ -2,6 +2,7 @@ owner = BRR
 controller = BRR
 add_core = BRR
 add_core = LOR
+add_core = FRK
 trade_goods = iron
 life_rating = 35
 

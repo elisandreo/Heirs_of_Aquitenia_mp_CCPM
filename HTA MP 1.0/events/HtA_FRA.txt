@@ -836,7 +836,7 @@ country_event = {
 		tag = FRA
 		BRT = { exists = no }
 		BRT = { all_core = { owned_by = THIS } }
-		NOT = { 421 = { is_core = THIS } }
+		NOT = { has_country_flag = french_bretagne }
 	}
 	
 	mean_time_to_happen = {
@@ -852,7 +852,7 @@ country_event = {
 		423 = { change_province_name = "Nantes" }
 		424 = { change_province_name = "Rennes" }
 		422 = { state_scope = { change_region_name = "Bretagne" } }
-		FRA = { accepted_culture = Bretons}
+		FRA = { add_accepted_culture = breton}
 		set_global_flag = french_bretagne
 	}
 }
@@ -921,6 +921,7 @@ country_event = {
 		add_core = 395
 		add_core = 396
 		add_core = 398
+		FRA = { set_country_flag = german_compromise }
 		ai_chance = {
 			factor = 1
 		}
@@ -949,3 +950,42 @@ country_event = {
 		}
 	}
 }
+
+ ountry_event = {
+	 id = 1000015
+	 title = "EVTNAME1000015"
+	desc = "EVTDESC1000015"
+	picture = "National_union"
+
+	trigger = {
+		tag = FRA
+		year = 1850
+		FRA = { nationalism_n_imperialism = 1 }
+		FRA = { war = no }
+		FRA = {has_country_flag = acceptance_of_picards}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "We should seek a cooperation with Aquitania !"
+		prestige = -5
+		AQT = { event = 1000016 }
+	}
+	option = {
+		name = "Only one ruler shall rule over France !
+		prestige = 10
+		AQT = { event = 1000017 }
+		AQT = {
+            all_core = {
+				add_core = FRA
+		    }
+        }
+	}
+	option = {
+		name = "We're not interested in this French thing"
+		AQT = { event = 1000018 }
+	}
+ }

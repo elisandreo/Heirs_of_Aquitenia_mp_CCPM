@@ -2,6 +2,7 @@ owner = WLL
 controller = WLL
 add_core = WLL
 add_core = LEO
+add_core = FRK
 trade_goods = grain
 life_rating = 35
 

@@ -19,12 +19,12 @@ AND;Andalusia;;;;;;;;;;;;;x
 AGR;Agra;;;;;;;;;;;;;x                                                     
 AGR_ADJ;Agran;;;;;;;;;;;;;x                                                
 AGR_absolute_monarchy;Suryavamsi Empire;;;;;;;;;;;x
-AQT;Aquitània;;;;;;;;;;;;;x                                                
-AQT_ADJ;Aquitànian;;;;;;;;;;;;;x                                           
+AQT;AquitÃ nia;;;;;;;;;;;;;x                                                
+AQT_ADJ;AquitÃ nian;;;;;;;;;;;;;x                                           
 AQT_fascist_dictatorship;Empire of the Mediterranean;;;;;;;;;;;;x
 AQT_proletarian_dictatorship;Mediterranean Commune;;;;;;;;;;;;;x
 AQT_presidential_dictatorship;Nova Roma;;;;;;;;;;;;;;x
-AQT_democracy;Aquitànian Republic;;;;;;;;;;;x
+AQT_democracy;AquitÃ nian Republic;;;;;;;;;;;x
 AQT_reactionary;Partit Reiau-Alo;;;;;;;;;;;;;;;x
 AQT_liberal;Partit de lo Popolo;;;;;;;;;;;;x
 AQT_conservative;Partit Counservadouro;;;;;;;;;;;;x
@@ -157,8 +157,8 @@ CMP_ADJ;Champagnois;;;;;;;;;;;;;x
 CMP_conservative;Conseil Ducal;;;;;;;;;;;x
 CMP_conservative_2;Champagnoises;Champagnoises;Champagnoises;;;;;;;;;;;x; 
 CMP_conservative_3;Royalistes;;;;;;;;;;;x
-CMP_liberal;Société Cosmopolitaine;;;;;;;;;;;;x
-CMP_liberal_2;Union Démocratique;;;;;;;;;;x
+CMP_liberal;SociÃ©tÃ© Cosmopolitaine;;;;;;;;;;;;x
+CMP_liberal_2;Union DÃ©mocratique;;;;;;;;;;x
 CMP_socialist;Lys Rouge;Lys Rouge;Lys Rouge;;;;;;;;;;;x;                
 CMP_reactionary;Normands;Normands;Normands;;;;;;;;;;;x;                 
 CMP_anarcho_liberal;Unificateurs;Unificateurs;Unificateurs;;;;;;;;;;;x; 
@@ -181,16 +181,25 @@ DAU_communist;Partit Comunisto;;;;;;;;;;;;x
 DAU_fascist;Partit Faissisto;;;;;;;;;;;;x
 FIN_conservative_1;Aatelistojen puolue;;;;;;;;;x
 FIN_conservative_2;SYP;;;;;;;;;;x
-FIN_conservative_3;Viljelijäin puolue;;;;;;;;x
+FIN_conservative_3;ViljelijÃ¤in puolue;;;;;;;;x
 FIN_liberal_1;Vapaamielinen liitto;;;;;;;;;;x
 FIN_liberal_2;Liberaalinen puolue;;;;;;;;;;x
 FIN_reactionary_1;Kansanpuolue;;;;;;;;;x
-FIN_reactionary_2;Isänmaallinen kansanliitto;;;;;;;;;x
+FIN_reactionary_2;IsÃ¤nmaallinen kansanliitto;;;;;;;;;x
 FIN_anarcho_liberal;Kansallinen Edistyspuolue;;;;;;;;;;x
 FIN_communist;SKP;;;;;;;;;;;x
 FIN_fascist;SKTP;;;;;;;;;;;;x
 FIN_socialist;Sosialistinen puolue;;;;;;;;x
 FRA_absolute_monarchy;France;;;;;;;;;;;;;x
+FRK;Frankish Empire;;;;;;;;;;;;;x                                                 
+FRK_conservative;French party;;;;;;;;;;;;;;;x
+FRK_liberal_1;Dutch party;;;;;;;;;;;;x
+FRK_reactionary;Old nobility party;;;;;;;;;;;;x
+FRK_liberal_2;Flemish party;;;;;;;;;;;;x
+FRK_socialist;People party;;;;;;;;;;;;x
+FRK_communist;Frankish Union;;;;;;;;;;;;x
+FRK_fascist;Charlemagne restoration order;;;;;;;;;;;;x
+FRK_ADJ;Frankish Kingdom;;;;;;;;;;;;x
 GDN;Gidan;;;;;;;;;;;;;x                                                    
 GDN_ADJ;Gidaner;;;;;;;;;;;;;x
 GDN_anarcho_liberal;Brims Gade;;;;;;;;;;x
@@ -276,8 +285,8 @@ HNG_communist_86;Communists;;;;;;;;;;;;;x;
 HNG_fascist_72;Fascists;;;;;;;;;;;;;x;
 HOL;Holsten;;;;;;;;;;;;x
 HOL_ADJ;Holstensk;;;;;;;;;;;x
-HOY;Høyekysten;;;;;;;;;;;;;x                                               
-HOY_ADJ;Høyekystensk;;;;;;;;;;;;;x
+HOY;HÃ¸yekysten;;;;;;;;;;;;;x                                               
+HOY_ADJ;HÃ¸yekystensk;;;;;;;;;;;;;x
 HOY_conservative;Selvstendighetspartiet;;;;;;;;;;;;;;;x
 HOY_liberal;Fremskrittspartiet;;;;;;;;;;;;;;;x
 HOY_reactionary;Fjellting;;;;;;;;;;;;;;;x
@@ -296,8 +305,8 @@ INC_reactionary_84;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;;;;;;;x
 INC_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;;;;;;;;;x
 INC_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;             
 INC_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;                     
-IRE;Éire;;;;;;;;;;;;;x                                                     
-IRE_ADJ;Éireann;;;;;;;;;;;;;x         
+IRE;Ã‰ire;;;;;;;;;;;;;x                                                     
+IRE_ADJ;Ã‰ireann;;;;;;;;;;;;;x         
 IRK;Irakleio;;;;;;;;;x
 IRK_ADJ;Irakleian;;;;;;;;x                                     
 IRO;Iroquois;;;;;;;;;;x
@@ -333,8 +342,8 @@ KER_socialist;Labour Party;Labour Party;Labour Party;;;;;;;;;;;x
 KER_communist;Workers' Party;;;;;;;;;;;;;;x
 KER_anarcho_liberal;Radical Party;;;;;;;;;;;;;x
 KER_fascist;Mebion Kerno;;;;;;;;;;;;x
-KLO;Klöterland;;;;;;;;;;;;x
-KLO_ADJ;Klöterisch;;;;;;;;;;;x
+KLO;KlÃ¶terland;;;;;;;;;;;;x
+KLO_ADJ;KlÃ¶terisch;;;;;;;;;;;x
 KZH;Kazakh;;;;;;;;;;;;;x
 KZH_absolute_monarchy;Kazakh Khanate;;;;;;;;;;;;;x
 KZH_ADJ;Kazakh;;;;;;;;;;;;;x
@@ -371,8 +380,8 @@ LSK_anarcho_liberal;Estelle del Nord;;;;;;;;;;;;;x
 LSK_socialist;Socialist Party;;;;;;;;;;;;;x
 LSK_communist;Communistas;;;;;;;;;;;;;x
 LSK_fascist;Futuristas;;;;;;;;;;;;;x
-LTS;Lutèces;;;;;;;;;;;;;x                                                  
-LTS_ADJ;Lutècesan;;;;;;;;;;;;;x
+LTS;LutÃ¨ces;;;;;;;;;;;;;x                                                  
+LTS_ADJ;LutÃ¨cesan;;;;;;;;;;;;;x
 LTS_conservative_1;Faksyon Lwayalis;;;;;;;;;;;;;;;x
 LTS_conservative_4;Moderes Nasyonal;;;;;;;;;;;;;;;x
 LTS_liberal_1;Zanmi Revolisyon an;;;;;;;;;;;;;;;x
@@ -420,15 +429,15 @@ MEX_conservative_3;Partit Conservadouro;;;;;;;;;;;;;;;x
 MEX_liberal_4;Partit Liberal;;;;;;;;;;;;;;;x
 MNK;Mankemmark;;;;;;;;;;;;;x                                               
 MNK_ADJ;Mankemsk;;;;;;;;;;;;;x
-MNK_conservative;Ny Høyre;;;;;;;;;;;;;;;x
+MNK_conservative;Ny HÃ¸yre;;;;;;;;;;;;;;;x
 MNK_liberal;Senterpartiet;;;;;;;;;;;;;;;x
 MNK_reactionary;Gammel Vakt;;;;;;;;;;;;;;;x
 MNK_anarcho_liberal;Albesanspartiet;;;;;;;;;;;;;;;x
 MNK_socialist;Ny Venstre;;;;;;;;;;;;;;;x
 MNK_communist;Arbeiderpartiet;;;;;;;;;;;;;;;x
 MNK_fascist;Fremtid til Mankemmark;;;;;;;;;;;;;;;x                                         
-MNR;Münster;;;;;;;;;;x
-MNR_ADJ;Münsterisch;;;;;;;;;;;x
+MNR;MÃ¼nster;;;;;;;;;;x
+MNR_ADJ;MÃ¼nsterisch;;;;;;;;;;;x
 MNT;Montenegro;;;;;;;;;x
 MNT_ADJ;Montenegrin;;;;;;;;;;;;;x
 MNZ;Mainz;;;;;;;;;;;;;x
@@ -474,8 +483,8 @@ ORA_liberal;Freden Parti;;;;;;;;;;;;;x;;;;
 ORA_reactionary;Rektig Parti;;;;;;;;;;;x;;;;
 ORL;Orleans;;;;;;;;;;;;;x                                                  
 ORL_ADJ;Orleanais;;;;;;;;;;;;;x                                            
-ORL_reactionary;Orléanistes;Orléanistes;Orléanistes;;;;;;;;;;;x;       
-ORL_conservative_2;Conservatifs Révolutionaires;;;;;;;;;;;;;x
+ORL_reactionary;OrlÃ©anistes;OrlÃ©anistes;OrlÃ©anistes;;;;;;;;;;;x;       
+ORL_conservative_2;Conservatifs RÃ©volutionaires;;;;;;;;;;;;;x
 PDN;Padan Union;;;;;;;;;;x
 PDN_ADJ;Padanese;;;;;;;;;;x
 PDN_anarcho_liberal;Bande Azure;;;;;;;;;x
@@ -490,8 +499,8 @@ PHL;Panaja;;;;;;;;;;;x
 PHL_ADJ;Panajan;;;;;;;;;;x
 POM;Pomerania;;;;;;;;;x
 POM_ADJ;Pomeranian;;;;;;;;;;x
-PRE;Prouvença;;;;;;;;;;;;;x                                                 
-PRE_ADJ;Prouvençal;;;;;;;;;;;;;x
+PRE;ProuvenÃ§a;;;;;;;;;;;;;x                                                 
+PRE_ADJ;ProuvenÃ§al;;;;;;;;;;;;;x
 PRE_reactionary;Partit Reiau-Alo;;;;;;;;;;;;;;;x
 PRE_liberal;Partit de lo Popolo;;;;;;;;;;;;x
 PRE_conservative;Partit Counservadouro;;;;;;;;;;;;x
@@ -558,11 +567,11 @@ SIC;Sicily;;;;;;;;;;x
 SIC_ADJ;Sicilian;;;;;;;;;;x       
 SKA;Scania;;;;;;;;;;;x
 SKA_ADJ;Scanian;;;;;;;;;x
-SKA_conservative;Höjer Partiet;;;;;;;;;;x
+SKA_conservative;HÃ¶jer Partiet;;;;;;;;;;x
 SKA_liberal;Friliberaler;;;;;;;;;;;x      
 SKA_socialist;Socialistik Partiet;;;;;;;;;;x
 SKA_communist;Kommunistika Forbund;;;;;;;;;x
-SKA_reactionary;Skånske Folkes Partiet;;;;;;;;x
+SKA_reactionary;SkÃ¥nske Folkes Partiet;;;;;;;;x
 SKA_anarcho_liberal;Nationalliberale;;;;;;;;;;x
 SKA_fascist;Fascister;;;;;;;;;;;x             
 SKM;Skamisc;;;;;;;;;;;;;x                                                  
@@ -635,8 +644,8 @@ TRN_reactionary;Rektig Parti;;;;;;;;;;;x;;;;
 TRR;Trier;;;;;;;;;;;x
 TRR_ADJ;Trieish;;;;;;;;;;;x
 UMA;Umayyad Caliphate;;;;;;;;;;;;;x
-URU;Ysùn;;;;;;;;;;;;;x                                                     
-URU_ADJ;Ysùno;;;;;;;;;;;;;x
+URU;YsÃ¹n;;;;;;;;;;;;;x                                                     
+URU_ADJ;YsÃ¹no;;;;;;;;;;;;;x
 URU_conservative;Reduccioneros;;;;;;;;;;;;;;;x
 URU_liberal;Antireduccioneros;;;;;;;;;;;;;;;x
 URU_reactionary;Los Encomenderos;;;;;;;;;;;;;;;x

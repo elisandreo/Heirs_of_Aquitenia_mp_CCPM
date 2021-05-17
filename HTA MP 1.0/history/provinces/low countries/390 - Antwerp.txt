@@ -2,6 +2,7 @@ owner = BRB
 controller = BRB
 add_core = BRB
 add_core = LEO
+add_core = FRK
 trade_goods = cattle
 life_rating = 35
 railroad = 1

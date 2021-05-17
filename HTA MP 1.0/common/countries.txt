@@ -141,6 +141,7 @@ PRE		= "countries/Provence.txt"
 SWI		= "countries/Switzerland.txt"
 WLL		= "countries/Wallonia.txt"
 LEO		= "countries/Leo Belgicus.txt"
+FRK     = "countries/Frankish Empire.txt"
 
 # Italy
 CRS		= "countries/Corsica.txt"
