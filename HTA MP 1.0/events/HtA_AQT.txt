@@ -1,7 +1,5 @@
 #Events 50000, 50002, and later 50220-50249
 
-
-
 #Death of King Raimond VIII
 country_event = {
 	id = 50000
@@ -306,6 +304,7 @@ country_event = {
 	}
 }
 
+<<<<<<< HEAD
 #Vassalize Catalonia
 country_event = {
 	id = 1000005

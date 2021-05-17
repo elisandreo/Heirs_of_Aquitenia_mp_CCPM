@@ -20,49 +20,12 @@ political_decisions = {
 		}
 	}
 
-#Crown in Reims !
-	crown_in_reims = {
-		picture = coronation_reims
-		potential = {
-			tag = FRA
-			primary_culture = french
-			NOT = { has_country_flag = crown_in_reims }
-		}
-
-		allow = {
-			OR = {
-				is_secondary_power = yes
-				is_great_power = yes
-			}
-			prestige = 20
-			war = no
-			owns = 408
-		}
-		effect = {
- 		prestige = 15
-  		any_country = {
-        	limit = {
-            	is_culture_group = french
-				NOT = { tag = THIS }
-				OR = {
-					is_vassal = no
-					vassal_of = THIS
-				}
-				exists = yes
-    		}
-    		country_event = 1000001
-    	}
-		set_country_flag = crown_in_reims
-		}
-	}
-	
-
 # Return to the sea! (Reclaim interior cores, regain cores on the Normandy coast)
 	return_to_the_sea = {
 		picture = valparaiso_harbor
 		potential = {
-			tag = FRAs
-			NOT = {has_country_flag = FRA_man_and_the_sea}
+			tag = FRA
+			NOT = { has_country_flag = FRA_man_and_the_sea }
 		}
 		
 		allow = {
@@ -85,11 +48,8 @@ political_decisions = {
 	FRA_return_our_colonies = {
 		potential = {
 			tag = FRA
-			has_country_flag = crown_in_reims
+			has_country_flag = FRA_man_and_the_sea
 			NOT = { has_global_flag = FRA_wants_their_colonies_BRT }
-			NOT = { has_country_flag = BRT_annexation_demanded }
-			NOT = { has_country_flag = no_more_nobles }
-			BRT = { is_vassal = no }
 		}
 		
 		allow = {
@@ -121,16 +81,12 @@ political_decisions = {
 		potential = {
 			tag = FRA
 			NOT = { has_country_flag = BRT_annexation_demanded }
-			has_country_flag = crown_in_reims
-			BRT = { exists = yes }
-			BRT = { is_vassal = no }
-			
+			has_global_flag = FRA_our_colony_returned_BRT
 		}
 		
 		allow = {
+			2134 = { owned_by = FRA }
 			NOT = { truce_with = BRT}
-			state_n_government = 1
-
 		}
 		
 		effect = {
@@ -159,33 +115,31 @@ political_decisions = {
 		potential = {
 			tag = FRA
 			NOT = { has_country_flag = no_more_nobles }
-			OR = {
-				any_owned_province = {
-					OR = {
-						is_core = CMP
-						is_core = ORL
-						is_core = NRM
-					}
+			any_owned_province = {
+				OR = {
+					is_core = CMP
+					is_core = ORL
+					is_core = NRM
 				}
-				has_country_flag = crown_in_reims
 			}
 		}
 		allow = {
+			owns = 418
+			CMP = { exists = no }
+			ORL = { exists = no }
+			NRM = { exists = no }
 			war = no
 			state_n_government = 1
 		}
 		effect = {
-			prestige = 10
+			prestige = 3
 			set_country_flag = no_more_nobles
-			any_country = {
-        		limit = {
+			any_owned = {
+				limit = {
 					OR = {
-						is_culture_group = french
-						accepted_culture = french
-					}
-					NOT = { tag = THIS }
-					OR = {
-						vassal_of = FRA
+						is_core = CMP
+						is_core = ORL
+						is_core = NRM
 					}
 					exists = yes
     			}
@@ -213,7 +167,6 @@ political_decisions = {
 					LOR = { all_core = { owned_by = FRA } }
 				}
 			}
-			NOT = { has_country_flag = crown_in_reims }
 			NOT = { has_country_flag = bar_lorraine_claimed }
 		}
 		
@@ -239,6 +192,8 @@ political_decisions = {
 		}
 	}
 
+# The Picards and Walloons are French!
+
 # Usurp the crown of France
 	usurp_french_crown = {
 		picture = gesture_of_defiance
@@ -249,7 +204,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 30
+			prestige = 50
 			owns = 428
 			FRA = { exists = no }
 		}
@@ -261,6 +216,7 @@ political_decisions = {
 		}
 	}
 
+<<<<<<< HEAD
 	acceptance_of_picardie = {
 		picture = picard
 		potential = {
@@ -413,10 +369,16 @@ political_decisions = {
 			GER = {
 				country_event = 1000011
 			}
-			prestige = -5
-			GER = {
-				prestige = 10
+			NRM = {
+				OR = {
+					AND = {
+						relation = {who = THIS value = 100}
+						exist = yes
+					}
+					in_sphere = THIS
+				}
 			}
+<<<<<<< HEAD
 		}
 	}
 }
@@ -490,5 +452,4 @@ political_decisions = {
 			}
 		}
 	}
-
 }

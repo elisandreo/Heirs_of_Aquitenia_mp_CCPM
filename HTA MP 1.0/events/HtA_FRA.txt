@@ -852,7 +852,10 @@ country_event = {
 		423 = { change_province_name = "Nantes" }
 		424 = { change_province_name = "Rennes" }
 		422 = { state_scope = { change_region_name = "Bretagne" } }
+<<<<<<< HEAD
 		FRA = { add_accepted_culture = breton}
+=======
+>>>>>>> fe8c4bb6312c7c3d1eb2812c8d519fa2214c7e04
 		set_global_flag = french_bretagne
 	}
 }
@@ -875,6 +878,7 @@ country_event = {
 	
 	trigger = {
 		tag = FRA
+		has_country_flag = bar_lorraine_claimed
 		BRR = { all_core = { is_core = FRA owned_by = FRA } }
 		LOR = { all_core = { is_core = FRA owned_by = FRA } }
 		NOT = { has_country_flag = bar_lorraine_cores_removed }
@@ -900,6 +904,7 @@ country_event = {
 		set_country_flag = bar_lorraine_cores_removed
 	}
 }
+<<<<<<< HEAD
 
 #German compromise
 country_event = {
@@ -989,3 +994,4 @@ country_event = {
 		AQT = { event = 1000018 }
 	}
  }
+

@@ -1,0 +1,114 @@
+political_decisions = {
+	form_vinland = {
+		potential = {
+			tag = VST
+		}
+		allow = {
+			war = no
+			NHL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								vassal_of = THIS
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			change_tag = VIN
+			inherit = NHL
+			NHL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = nieuwlander
+		}
+	}
+	claim_new_holland = {
+		potential = {
+			tag = VST
+			NOT = { has_country_flag = claimed_vinland }
+		}
+		allow = {
+			war = no
+#add this after testing			state_n_government = 1
+		}
+		effect = {
+			NHL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = claimed_vinland
+			prestige = 5
+			infamy = 3
+		}
+	}
+	claim_great_lakes = {
+		potential = {
+			tag = VIN
+			NOT = { has_country_flag = claimed_iroquois }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+			prestige = 30
+		}
+		effect = {
+			badboy = 5
+			prestige = 5
+			add_accepted_culture = iroquois
+			set_country_flag = claimed_iroquois
+			IRO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+		}
+	}
+	annex_dabimon = {
+		potential = {
+			tag = VIN
+			exists = QUE
+		}
+		allow = {
+			QUE = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								vassal_of = THIS
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+			}
+			nationalism_n_imperialism = 1
+			prestige = 30
+			war = no
+		}
+		effect = {
+			QUE = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = french_canadian
+			inherit = QUE
+			prestige = 5
+			badboy = 3
+		}
+	}	
+}
+
+							
+		
