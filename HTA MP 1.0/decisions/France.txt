@@ -378,7 +378,6 @@ political_decisions = {
 					in_sphere = THIS
 				}
 			}
-<<<<<<< HEAD
 		}
 	}
 }
