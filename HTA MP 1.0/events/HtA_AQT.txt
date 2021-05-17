@@ -304,7 +304,6 @@ country_event = {
 	}
 }
 
-<<<<<<< HEAD
 #Vassalize Catalonia
 country_event = {
 	id = 1000005

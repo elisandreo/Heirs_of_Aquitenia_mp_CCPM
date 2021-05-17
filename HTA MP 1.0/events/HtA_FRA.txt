@@ -114,7 +114,7 @@ country_event = {
 		BRT = { treasury = 50000 }
 		2134 = {
 			secede_province = FRA
-			change_province_name = "�les Bleues"
+			change_province_name = "iles Bleues"
 			remove_core = BRT
 			add_core = FRA
 		}
@@ -537,7 +537,7 @@ country_event = {
 		name = "Let it be the first of many victories!"
 		prestige = 10
 		2134 = {
-			change_province_name = "�les Bleues"
+			change_province_name = "iles Bleues"
 			remove_core = BRT
 			add_core = FRA
 		}
@@ -844,7 +844,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Gloire � la Patrie!"
+		name = "Gloire a la Patrie!"
 		prestige = 5
 		BRT = { all_core = { add_core = THIS } }
 		421 = { change_province_name = "St. Brieuc" }
@@ -852,10 +852,7 @@ country_event = {
 		423 = { change_province_name = "Nantes" }
 		424 = { change_province_name = "Rennes" }
 		422 = { state_scope = { change_region_name = "Bretagne" } }
-<<<<<<< HEAD
 		FRA = { add_accepted_culture = breton}
-=======
->>>>>>> fe8c4bb6312c7c3d1eb2812c8d519fa2214c7e04
 		set_global_flag = french_bretagne
 	}
 }
@@ -878,7 +875,6 @@ country_event = {
 	
 	trigger = {
 		tag = FRA
-		has_country_flag = bar_lorraine_claimed
 		BRR = { all_core = { is_core = FRA owned_by = FRA } }
 		LOR = { all_core = { is_core = FRA owned_by = FRA } }
 		NOT = { has_country_flag = bar_lorraine_cores_removed }
@@ -904,7 +900,6 @@ country_event = {
 		set_country_flag = bar_lorraine_cores_removed
 	}
 }
-<<<<<<< HEAD
 
 #German compromise
 country_event = {
@@ -956,16 +951,15 @@ country_event = {
 	}
 }
 
- ountry_event = {
+country_event = {
 	 id = 1000015
 	 title = "EVTNAME1000015"
-	desc = "EVTDESC1000015"
-	picture = "National_union"
+	 desc = "EVTDESC1000015"
+	 picture = "National_union"
 
 	trigger = {
 		tag = FRA
 		year = 1850
-		FRA = { nationalism_n_imperialism = 1 }
 		FRA = { war = no }
 		FRA = {has_country_flag = acceptance_of_picards}
 	}
@@ -980,15 +974,15 @@ country_event = {
 		AQT = { event = 1000016 }
 	}
 	option = {
-		name = "Only one ruler shall rule over France !
+		name = "Only one ruler shall rule over France !"
 		prestige = 10
-		AQT = { event = 1000017 }
 		AQT = {
             all_core = {
 				add_core = FRA
 		    }
         }
-		set_country_flag = one_
+		AQT = { event = 1000017 }
+		set_country_flag = one_nation_solution
 	}
 	option = {
 		name = "We're not interested in this French thing"

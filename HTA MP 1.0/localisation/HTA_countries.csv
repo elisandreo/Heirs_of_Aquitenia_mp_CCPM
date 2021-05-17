@@ -19,12 +19,12 @@ AND;Andalusia;;;;;;;;;;;;;x
 AGR;Agra;;;;;;;;;;;;;x                                                     
 AGR_ADJ;Agran;;;;;;;;;;;;;x                                                
 AGR_absolute_monarchy;Suryavamsi Empire;;;;;;;;;;;x
-AQT;Aquitània;;;;;;;;;;;;;x                                                
-AQT_ADJ;Aquitànian;;;;;;;;;;;;;x                                           
+AQT;Aquitania;;;;;;;;;;;;;x                                                
+AQT_ADJ;Aquitanian;;;;;;;;;;;;;x                                           
 AQT_fascist_dictatorship;Empire of the Mediterranean;;;;;;;;;;;;x
 AQT_proletarian_dictatorship;Mediterranean Commune;;;;;;;;;;;;;x
 AQT_presidential_dictatorship;Nova Roma;;;;;;;;;;;;;;x
-AQT_democracy;Aquitànian Republic;;;;;;;;;;;x
+AQT_democracy;Aquitanian Republic;;;;;;;;;;;x
 AQT_reactionary;Partit Reiau-Alo;;;;;;;;;;;;;;;x
 AQT_liberal;Partit de lo Popolo;;;;;;;;;;;;x
 AQT_conservative;Partit Counservadouro;;;;;;;;;;;;x
@@ -296,8 +296,8 @@ INC_reactionary_84;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;;;;;;;x
 INC_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;;;;;;;;;x
 INC_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;             
 INC_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;                     
-IRE;Éire;;;;;;;;;;;;;x                                                     
-IRE_ADJ;Éireann;;;;;;;;;;;;;x         
+IRE;Eire;;;;;;;;;;;;;x                                                     
+IRE_ADJ;Eireann;;;;;;;;;;;;;x         
 IRK;Irakleio;;;;;;;;;x
 IRK_ADJ;Irakleian;;;;;;;;x                                     
 IRO;Iroquois;;;;;;;;;;x
@@ -338,16 +338,6 @@ KLO_ADJ;Klöterisch;;;;;;;;;;;x
 KZH;Kazakh;;;;;;;;;;;;;x
 KZH_absolute_monarchy;Kazakh Khanate;;;;;;;;;;;;;x
 KZH_ADJ;Kazakh;;;;;;;;;;;;;x
-LEO; Leo Belgicus;;;;;;;;;;;;;x
-LEO_proletariat_dictatorship;Benelux Commune;;;;;;;;;;;;;x
-LEO_fascist_dictatorship;Thiois Empire;;;;;;;;;;;;;x
-LEO_democracy;Benelux Republic;;;;;;;;;;;;;x
-LEO_liberal;Liberaal blok;;;;;;;;;;;;;x
-LEO_reactionary;Front National;;;;;;;;;;;;;x
-LEO_socialist;Parti Socialiste du Benelux;;;;;;;;;;;;;x
-LEO_communist;Communistische Partij van de Benelux;;;;;;;;;;;;;x
-LEO_fascist;Parti Rexiste;;;;;;;;;;;;;x
-LEO_ADJ;Beneluxian;;;;;;;;;;;;;x
 LPL_liberal;Partido Democratico;;;;;;;;;;;;;;;x
 LPL_liberal_2;Accion Popular;;;;;;;;;;;;;;;x
 LPL_conservative;Partido Popular;;;;;;;;;;;;;;;x
@@ -677,5 +667,24 @@ YUC_communist;Partit Socialista Obrier;;;;;;;;;;;;;;;x
 YUC_fascist;Ascendencia Maia;;;;;;;;;;;;;;;x
 ZAC;Zachadia;;;;;;;;;;;x
 ZAC_ADJ;Zachad;;;;;;;;;;;;x
+FRK;Frankish Empire;;;;;;;;;;;;;x                                                 
+FRK_conservative;French party;;;;;;;;;;;;;;;x
+FRK_liberal_1;Dutch party;;;;;;;;;;;;x
+FRK_reactionary;Old nobility party;;;;;;;;;;;;x
+FRK_liberal_2;Flemish party;;;;;;;;;;;;x
+FRK_socialist;People party;;;;;;;;;;;;x
+FRK_communist;Frankish Union;;;;;;;;;;;;x
+FRK_fascist;Charlemagne restoration order;;;;;;;;;;;;x
+FRK_ADJ;Frankish Kingdom;;;;;;;;;;;;x
+LEO; Leo Belgicus;;;;;;;;;;;;;x
+LEO_proletariat_dictatorship;Benelux Commune;;;;;;;;;;;;;x
+LEO_fascist_dictatorship;Thiois Empire;;;;;;;;;;;;;x
+LEO_democracy;Benelux Republic;;;;;;;;;;;;;x
+LEO_liberal;Liberaal blok;;;;;;;;;;;;;x
+LEO_reactionary;Front National;;;;;;;;;;;;;x
+LEO_socialist;Parti Socialiste du Benelux;;;;;;;;;;;;;x
+LEO_communist;Communistische Partij van de Benelux;;;;;;;;;;;;;x
+LEO_fascist;Parti Rexiste;;;;;;;;;;;;;x
+LEO_ADJ;Beneluxian;;;;;;;;;;;;;x
 VIN;Vinland;;;;;;;;;;;;x
 VIN_ADJ;Vinlandic;;;;;;;;;;;;x

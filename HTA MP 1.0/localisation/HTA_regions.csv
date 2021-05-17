@@ -49,7 +49,7 @@ USA_201;Itseyi;;;;;;;;;x,,,
 USA_205;Miigiska;;;;;;;;;x,,,
 USA_211;Eganulti;;;;;;;;;;x,,,
 USA_218;Skotamewi;;;;;;;;;;x,,,
-USA_219;H�ylandet;;;;;;;;;;x
+USA_219;Hsylandet;;;;;;;;;;x
 USA_223;Tesepikhav;;;;;;;;;;x
 SHC_227;Menelenehi;;;;;;;;;;;x,,,
 USA_231;Hertos;;;;;;;;;;;x
@@ -72,13 +72,13 @@ ENG_284;Mierce;;;;;;;;;;;x
 ENG_291;Essaxe;;;;;;;;;;;x
 ENG_296;Wessaxe;;;;;;;;;;;x
 ENG_300;Sudsaxe;;;;;;;;;;;x
-SWE_329;G�teborg;;;;;;;;;;;;x      
+SWE_329;Goteborg;;;;;;;;;;;;x      
 FIN_307;Lappi;;;;;;;;;;;x,,,
 RUS_336;Savo;;;;;;;;;;;x
 RUS_345;Suomi;;;;;;;;;;;x
 SCH_370;Slesvig & Holsten;;;;;;;;;;;x
-SWE_332;Sm�land;;;;;;;;;;;x,,,
-SWE_334;Sk�ne;;;;;;;;;;;x,,,
+SWE_332;Smaland;;;;;;;;;;;x,,,
+SWE_334;Skane;;;;;;;;;;;x,,,
 RUS_360;Vilna;;;;;;;;;;;;;x
 RUS_361;Lithuania;;;;;;;;;;;;;x
 HOL_369;Holstein;;;;;;;;;;;;x   
@@ -86,18 +86,18 @@ NET_379;Zeeland;;;;;;;;;;;;x
 BEL_387;Flanders;;;;;;;;;;;;x      
 BEL_394;Wallonia;;;;;;;;;;;;x      
 FRA_411;Bar-Lorraine;;;;;;;;;;;x
-FRA_412;Elsa�;;;;;;;;;;x
-FRA_438;Orl�ans;;;;;;;;;;;;;;;x,,,
+FRA_412;Elsass;;;;;;;;;;x
+FRA_438;Orleans;;;;;;;;;;;;;;;x,,,
 FRA_442;Peitau;;;;;;;;;;;;;;;x,,,
-FRA_445;�rdene;;;;;;;;;;;;;;;x,,,
+FRA_445;Ardene;;;;;;;;;;;;;;;x,,,
 FRA_448;Auvernha;;;;;;;;;;;;;;;x,,,
-FRA_451;R�se;;;;;;;;;;;;;;x
-FRA_455;Mi�gjorn;;;;;;;;;;;;;;;x,,,
+FRA_451;Rose;;;;;;;;;;;;;;x
+FRA_455;Miogjorn;;;;;;;;;;;;;;;x,,,
 FRA_458;Garona;;;;;;;;;;;;;;;x,,,
-FRA_461;Lengad�c;;;;;;;;;;;;;;;x,,,
-SAR_466;Savou�;;;;;;;;;;;;;;;x,,,
-FRA_467;Prouven�a;;;;;;;;;;;;;;;x,,,
-SPA_477;Le�n;Le�n;Le�n;;Le�n;;;;;;;;;x
+FRA_461;Lengadoc;;;;;;;;;;;;;;;x,,,
+SAR_466;Savoue;;;;;;;;;;;;;;;x,,,
+FRA_467;Prouvenca;;;;;;;;;;;;;;;x,,,
+SPA_477;Leon;Leon;Leon;;Leon;;;;;;;;;x
 SPA_481;Castilla;Castilla;Castilla;;Castilla;;;;;;;;x
 SPA_492;Vasconia;Vasconia;Vasconia;;Vasconia;;;;;;;x 
 SPA_496;Aragon;Aragon;Aragon;;Aragon;;;;;;;;;x
@@ -167,7 +167,7 @@ RUS_968;Transnistria;;;;;;;;;;;;x
 UKR_976;Zaporozhia;;;;;;;;;;x
 RUS_978;Kharkov;;;;;;;;;;;;x       
 RUS_979;Donbass;;;;;;;;;;;;x
-FIN_988;��ninen;;;;;;;;;;;;x,,,
+FIN_988;Fininen;;;;;;;;;;;;x,,,
 RUS_994;Ingeri;;;;;;;;;;x
 RUS_1003;Pskov;;;;;;;;;;;;;x,,,
 RUS_1009;Ryazan;;;;;;;;;x,,,
@@ -339,8 +339,8 @@ CHI_2221;South Jiangsu;;;;;;;;;;;;x
 VNZ_2234;Sturlihaf;;;;;;;;;x
 NET_2235;Leeward Antilles;;;;;;;;;;x
 GDN_2240;Selvenkes;;;;;;;;;;x
-CLM_2247;Fl�elmark;;;;;;;;;;x
-CLM_2251;H�yekyst;;;;;;;;x
+CLM_2247;Flaelmark;;;;;;;;;;x
+CLM_2251;Huyekyst;;;;;;;;x
 CLM_2259;Baskalstrip;;;;;;;;;x
 CLM_2262;Inskog;;;;;;;;;;x
 VNZ_2265;Norillan;;;;;;;;;;x
@@ -358,7 +358,7 @@ BOL_2317;Bronedel;;;;;;;;;;;x
 BOL_2321;Chuqi Yapu;;;;;;;;;;;x
 PRG_2338;Cempstrel;;;;;;;;;;;x
 PRG_2343;Paragua;;;;;;;;;;;x
-URU_2344;Ys�n;;;;;;;;;;x
+URU_2344;Yson;;;;;;;;;;x
 ARG_2360;Entre Rios;;;;;;;;;;;;x 
 ARG_2374;Catamarca;;;;;;;;;;;;x    
 BRZ_2401;Upper Jordracan;;;;;;;;;;x
