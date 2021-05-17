@@ -967,7 +967,7 @@ country_event = {
 	}
 }
 
-#Lybï¿½k renamed to Lubeck		Parallel event #50503 in HtA_Scandinavia
+#Lybæk renamed to Lubeck		Parallel event #50503 in HtA_Scandinavia
 country_event = {
 	id = 50071
 	title = "EVTNAME50071"
@@ -994,7 +994,7 @@ country_event = {
 		prestige = 1
 		set_global_flag = german_lubeck
 		530 = {
-			change_province_name = "Lï¿½beck"
+			change_province_name = "Lübeck"
 		}
 	}
 }
@@ -1014,85 +1014,6 @@ country_event = {
 		543 = { secede_province = THIS add_core = THIS }
 	}
 }
-
-
-#The German compromise 
-country_event = {
-	id = 1000012
-	title = "EVTNAME1000012"
-	desc = "EVTDESC1000012"
-	picture = "Napoleon_III_Otto_von_Bismarck"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "We accept the french proposition"
-		prestige = -5
-		relation = {who = FRA value = 100}
-		relation = {who = WLL value = -100}
-		FRA = {country_event = 1000013}
-		ai_chance = {
-			factor = 0.5
-            modifier = {
-                factor = 0.25
-                war = yes
-            }
-			modifier = {
-                factor = 0.25
-                relation = { who = FRA value = 50 }
-            }
-            modifier = {
-                factor = 0.5
-                relation = { who = FRA value = 100 }
-            }
-            modifier = {
-                factor = 0.75
-                relation = { who = FRA value = 150 }
-            }
-            modifier = {
-                factor = 1
-                relation = { who = FRA value = 200 }
-            }
-			modifier = {
-                factor = 0.5
-                FRA = {war = no}
-            }
-		}
-		option = {
-        name = "France shouldn't try to expand toward the Benelux !"
-        FRA = {country_event = 1000014}
-		relation = {who = FRA value = -100}
-		relation = {who = WLL value = 100}
-        prestige = 10
-		create_alliance = WLL
-        ai_chance = {
-			factor = 0.5
-			modifier = {
-                factor = 0.25
-                war = yes
-            }
-            modifier = {
-                factor = 0.25
-                relation = { who = AQT value = -50 }
-            }
-            modifier = {
-                factor = 0.5
-                relation = { who = AQT value = -100 }
-            }
-            modifier = {
-                factor = 0.75
-                relation = { who = AQT value = -150 }
-            }
-            modifier = {
-                factor = 1
-                relation = { who = AQT value = -200 }
-            }
-            modifier = {
-                factor = 0.5
-                AQT = {war = yes}
-            }
-		}
-
 
 #Event to set a flag 
 	

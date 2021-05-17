@@ -54,6 +54,7 @@ SHC		= "countries/Shawnee Confederation.txt"
 SKM		= "countries/Skamisc.txt"
 SOL		= "countries/Solelha.txt"
 TRS		= "countries/Tarasco.txt"
+VIN             = "countries/Vinland.txt"
 VST		= "countries/Vestland.txt"
 
 # Northern Europe

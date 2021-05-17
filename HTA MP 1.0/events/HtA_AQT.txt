@@ -1,7 +1,5 @@
 #Events 50000, 50002, and later 50220-50249
 
-
-
 #Death of King Raimond VIII
 country_event = {
 	id = 50000
@@ -166,7 +164,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "It is the dawn of a New Aquitï¿½nia."
+		name = "It is the dawn of a New Aquitània."
 		set_country_flag = revolution_in_blood
 		clr_country_flag = liberal_revolution_in_progress
 		government = democracy
@@ -303,183 +301,6 @@ country_event = {
 		name = "Interesting."
 		prestige = 1
 		end_war = FROM
-	}
-}
-
-#Vassalize Catalonia
-country_event = {
-	id = 1000005
-	title = "EVTNAME1000005"
-	desc = "EVTDESC1000005"
-	picture = "succession"
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = AQT
-		year = 1836
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
-
-	option = {
-		name = "The crown of Catalonia is ours by right !"
-		CAT = {country_event = 1000006}
-		prestige = 5
-		relation = {who = CAS value = -100}
-		ai_chance = {
-			factor = 0.75
-            modifier = {
-                factor = 0.25
-                war = no
-            }
-		}
-	}
-	option = {
-		name = "we can let them rule on their own for now"
-		prestige = -5
-		relation = {who = CAS value = 100}
-		influence = {who = CAT value = -100}
-		ai_chance = {
-			factor = 0.25
-            modifier = {
-                factor = 0.25
-                war = yes
-            }
-		}
-	}
-}
-
-country_event = {
-	id = 1000007
-	title = "EVTNAME1000007"
-	desc = "EVTDESC1000007"
-	picture = "succession"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "Prosperity and peace in Catalonia"
-		prestige = 5
-		badboy = 1
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-#War with Catalonia
-country_event = {
-	id = 1000008
-	title = "EVTNAME1000008"
-	desc = "EVTDESC1000008"
-	picture = "Catalonia_rise_up"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "We will crush them"
-		prestige = 5
-		relation = {who = CAS value = -100}
-		relation = {who = CAT value = -100}
-		ai_chance = {
-			factor = 0.75
-            modifier = {
-                factor = 0.25
-                war = no
-            }
-		}
-	}
-	option = {
-		name = "We can't deal with this revolt, they will be free"
-		prestige = -5
-		relation = {who = CAT value = 100}
-		relation = {who = CAS value = 100}
-		influence = {who = CAT value = -100}
-		ai_chance = {
-			factor = 0.25
-            modifier = {
-                factor = 0.25
-                war = yes
-            }
-		}
-	}
-}
-
-country_event = {
-	id = 1000010
-	title = "EVTNAME1000010"
-	desc = "EVTDESC1000010"
-	picture = "succession"
-
-	is_triggered_only = yes
-
-	option = {
-		name ="It's time to integrate Catalonia into our realm !"
-		effect = {
-			prestige = 10
-			badboy = 3
-			set_country_flag = catalans_embraced
-			inherit = CAT
-			CAT = {
-				all_core = { add_core = AQT } }
-			add_accepted_culture = catalan
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = 1000011
-	title = "EVTNAME1000011"
-	desc = "EVTDESC1000011"
-	picture = "Catalonia_rise_up"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "We will crush them"
-		prestige = 5
-		relation = {who = CAS value = -100}
-		relation = {who = CAT value = -100}
-		AQT = {
-            war = {
-			    target = CAT
-			    attacker_goal = {
-				    casus_belli = make_puppet
-			    }
-			    defender_goal = {
-				    casus_belli = statu_quo
-			    }
-            }
-			badboy = -5
-        }
-		ai_chance = {
-			factor = 0.75
-            modifier = {
-                factor = 0.25
-                war = no
-            }
-		}
-	}
-	option = {
-		name = "We can't deal with this revolt, they will be free"
-		prestige = -10
-		relation = {who = CAT value = 100}
-		relation = {who = CAS value = 100}
-		influence = {who = CAT value = -100}
-		badboy = -2
-		ai_chance = {
-			factor = 0.25
-            modifier = {
-                factor = 0.25
-                war = yes
-            }
-		}
 	}
 }
 

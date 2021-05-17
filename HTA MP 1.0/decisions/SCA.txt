@@ -296,6 +296,7 @@ political_decisions = {
 			badboy = 5
 			prestige = 5
 			add_accepted_culture = swedish
+			set_country_flag = claimed_sweden
 			SWE = {
 				all_core = {
 					add_core = THIS
