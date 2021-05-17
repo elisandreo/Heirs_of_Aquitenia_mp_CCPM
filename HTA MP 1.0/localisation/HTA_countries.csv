@@ -191,15 +191,6 @@ FIN_communist;SKP;;;;;;;;;;;x
 FIN_fascist;SKTP;;;;;;;;;;;;x
 FIN_socialist;Sosialistinen puolue;;;;;;;;x
 FRA_absolute_monarchy;France;;;;;;;;;;;;;x
-FRK;Frankish Empire;;;;;;;;;;;;;x                                                 
-FRK_conservative;French party;;;;;;;;;;;;;;;x
-FRK_liberal_1;Dutch party;;;;;;;;;;;;x
-FRK_reactionary;Old nobility party;;;;;;;;;;;;x
-FRK_liberal_2;Flemish party;;;;;;;;;;;;x
-FRK_socialist;People party;;;;;;;;;;;;x
-FRK_communist;Frankish Union;;;;;;;;;;;;x
-FRK_fascist;Charlemagne restoration order;;;;;;;;;;;;x
-FRK_ADJ;Frankish Kingdom;;;;;;;;;;;;x
 GDN;Gidan;;;;;;;;;;;;;x                                                    
 GDN_ADJ;Gidaner;;;;;;;;;;;;;x
 GDN_anarcho_liberal;Brims Gade;;;;;;;;;;x

@@ -988,6 +988,7 @@ country_event = {
 				add_core = FRA
 		    }
         }
+		set_country_flag = one_
 	}
 	option = {
 		name = "We're not interested in this French thing"
