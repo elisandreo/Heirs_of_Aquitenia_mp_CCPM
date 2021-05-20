@@ -87,6 +87,7 @@ country_event = {
 	trigger = {
 		tag = CAT
 		year = 1850
+        vassal_of = AQT
 	}
 
 	mean_time_to_happen = {

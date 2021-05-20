@@ -290,7 +290,7 @@ political_decisions = {
 			year = 1850
 			has_country_flag = acceptance_of_picards
 			NOT = {has_country_flag = german_compromise}
-			NOT = {has_country_flag = one_nation_solution}
+			has_country_flag = two_nation_solution
 		}
 		allow = {
 			is_great_power = yes
@@ -367,6 +367,7 @@ political_decisions = {
 			year = 1850
 			has_country_flag = acceptance_of_picards
 			has_country_flag = german_compromise
+			has_country_flag = two_nation_solution
 		}
 		allow = {
 			war = no
@@ -397,6 +398,8 @@ political_decisions = {
 			year = 1850
 			has_country_flag = acceptance_of_picards
 			NOT = { has_country_flag = greater_france }
+			NOT = { has_country_flag = german_proposition }
+			has_country_flag = two_nation_solution
 		}
 		allow = {
 			is_great_power = yes
@@ -407,15 +410,7 @@ political_decisions = {
 			GER = {
 				country_event = 1000011
 			}
-			NRM = {
-				OR = {
-					AND = {
-						relation = {who = THIS value = 100}
-						exist = yes
-					}
-					in_sphere = THIS
-				}
-			}
+			set_country_flag = german_proposition
 		}
 	}
 }

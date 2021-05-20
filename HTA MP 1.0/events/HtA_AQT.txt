@@ -495,6 +495,8 @@ country_event = {
 		create_alliance = FRA
 		pop_growth = 0.01
 		tax_eff = 5
+		FRA = { event = 1000019}
+		set_country_flag = two_nation_solution
 	}
 	option = {
 		name = "Only one ruler shall rule over France !"
@@ -504,10 +506,13 @@ country_event = {
 				add_core = AQT
 		    }
         }
+		FRA = { event = 1000020}
 	}
 	option = {
 		name = "We aren't interested in this France thing"
+		FRA = { event = 1000021}
 	}
+	
 }
 
 country_event = {
@@ -518,15 +523,55 @@ country_event = {
 
 	is_triggered_only = yes
 
+	option = {
+		name = "Only one ruler shall rule over France !"
+		prestige = 10
+		FRA = {
+            all_core = {
+				add_core = AQT
+		    }
+        }
+	}
 }
 
 country_event = {
 	id = 1000018
-	title = "EVTNAME10000178"
+	title = "EVTNAME1000018"
 	desc = "EVTDESC1000018"
 	picture = "National_union"
 
 	is_triggered_only = yes
+
+	option = {
+		name = "Only one ruler shall rule over France !"
+		prestige = 10
+		FRA = {
+            all_core = {
+				add_core = AQT
+		    }
+        }
+		FRA = { event = 1000020}
+	}
+	option = {
+		name = "We aren't interested in this France thing"
+		FRA = { event = 1000022}
+		set_country_flag = no_french_resolution
+		militancy = 1
+		consciousness= 1
+	}
 }
+
+country_event = {
+	 id = 1000023
+	 title = "EVTNAME1000023"
+	 desc = "EVTDESC1000023"
+	 picture = "National_union"
+
+	 option = {
+		name = "No resolution for France then"
+		set_country_flag = no_french_resolution
+		militancy = 1
+		consciousness= 1
+	 }
 
 #Repeatable Event to remove influence from countries which aren't democratic after the revolution

@@ -990,3 +990,76 @@ country_event = {
 	}
  }
 
+ country_event = {
+	 id = 1000019
+	 title = "EVTNAME1000019"
+	 desc = "EVTDESC1000019"
+	 picture = "National_union"
+
+	option = {
+		name = "A peaceful resolution !"
+		pop_growth = 0.01
+		tax_eff = 5
+		set_country_flag = two_nation_solution
+	}
+
+ }
+
+ country_event = {
+	 id = 1000020
+	 title = "EVTNAME1000020"
+	 desc = "EVTDESC1000020"
+	 picture = "National_union"
+
+	option = {
+		name = "Blood for France"
+		AQT = {
+            all_core = {
+				add_core = FRA
+		    }
+        }
+		set_country_flag = one_nation_solution
+	}
+ }
+
+ country_event = {
+	 id = 1000021
+	 title = "EVTNAME1000021"
+	 desc = "EVTDESC1000021"
+	 picture = "National_union"
+	
+	option = {
+		name = "Only one ruler shall rule over France !"
+		prestige = 10
+		AQT = {
+            all_core = {
+				add_core = FRA
+		    }
+        }
+		AQT = { event = 1000017 }
+		set_country_flag = one_nation_solution
+	}
+	option = {
+		name = "No french resolution then"
+		AQT = { event = 1000023}
+		set_country_flag = no_french_resolution
+		militancy = 1
+		consciousness= 1
+	}
+ }
+
+country_event = {
+	 id = 1000022
+	 title = "EVTNAME1000022"
+	 desc = "EVTDESC1000022"
+	 picture = "National_union"
+
+	 option = {
+		name = "No resolution for France then"
+		set_country_flag = no_french_resolution
+		militancy = 1
+		consciousness= 1
+	 }
+	 
+ }
+
